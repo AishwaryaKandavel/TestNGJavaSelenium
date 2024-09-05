@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ECommerce]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="RahulShetty@1295"/>
+  <parameter name="emailID" value="henrycavillpookie@gmail.com"/>
+  <parameter name="URL" value="https://rahulshettyacademy.com/client"/>
+  <listeners>
+    <listener class-name="eCommerce.AbstractComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="E2E(failed)">
+    <parameter name="country" value="India"/>
+    <parameter name="productList" value="ZARA COAT 3;IPHONE 13 PRO"/>
+    <classes>
+      <class name="eCommerceApp.Tests.StandAloneTest">
+        <methods>
+          <include name="captureOrderDetails"/>
+          <include name="checkout"/>
+          <include name="addToCartAndVerify" invocation-numbers="0"/>
+          <include name="login"/>
+          <include name="initializeDriver"/>
+          <include name="verifyCart"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- eCommerceApp.Tests.StandAloneTest -->
+    </classes>
+  </test> <!-- E2E(failed) -->
+</suite> <!-- Failed suite [ECommerce] -->
