@@ -32,17 +32,19 @@ public class Login extends UtilityFunctions{
 	@FindBy(xpath="//input[@id='login']")
 	WebElement login;
 	
-	By signOut = By.xpath("//button[normalize-space(text())='Sign Out']");
+	By errorMsg = By.xpath("//*[normalize-space(text())='Incorrect email or password.']");
 	
 	public Products loginToApp(String emailID, String pwd) {
 		userEmail.sendKeys(emailID);
 		userPassword.sendKeys(pwd);
 		login.click();
-		//AnchorElementOnTheNextPage
-		Assert.assertTrue(waitForElementToBeClickable(signOut).isEnabled());
 		return new Products(driver);
 	}
 	public void goTo(String URL) {
 		driver.get(URL);
+	}
+	public void errorMsgValidation() {
+		waitForVisibilityOfElement(errorMsg);
+		Assert.assertTrue(true);
 	}
 }

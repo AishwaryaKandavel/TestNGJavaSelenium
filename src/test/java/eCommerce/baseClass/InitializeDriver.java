@@ -18,10 +18,20 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import eCommerce.AbstractComponents.Reporter;
+import eCommerce.POM.Login;
 
 public class InitializeDriver {
 	WebDriver driver;
 	Properties prop = new Properties();
+	Wait<WebDriver> wait;
+	Reporter report;
+	protected Login login;
 	
 	public WebDriver initializeBrowser() throws IOException {
 		
@@ -103,5 +113,16 @@ public class InitializeDriver {
 		if(browser.equalsIgnoreCase("firefox"))
 			driver.manage().window().maximize();
 		return driver;
+	}
+	@BeforeMethod
+	public void launchApp() throws IOException {
+		driver = initializeBrowser();
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		report = new Reporter(driver);
+		login = new Login(driver);
+	}
+	@AfterMethod
+	public void closeBrowser() {
+		driver.close();
 	}
 }
