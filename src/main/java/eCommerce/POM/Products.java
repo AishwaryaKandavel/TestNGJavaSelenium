@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import eCommerce.AbstractComponents.UtilityFunctions;
 
@@ -23,7 +24,7 @@ public class Products extends UtilityFunctions{
 		PageFactory.initElements(driver, this);
 	}
 	
-	By loadingScreen = By.xpath("/div[@id='toast-container']");
+	By loadingScreen = By.cssSelector(".ng-animating");
 	By continueShopping = By.xpath("//button[text()='Continue Shopping']");
 	
 	@FindBy(xpath="//button[contains(text(),'Cart')]")
@@ -36,18 +37,18 @@ public class Products extends UtilityFunctions{
 		return productToAdd;
 	}
 	
-	public boolean addProductsToCart(String products) {
+	public Cart addProductsToCart(String products) {
 		
 		waitForInvisibilityOfElement(loadingScreen);
 		String[] product = products.split(";");
 		for (String prod : product) {
 			WebElement productElem = waitForElementToBeClickable(setProductValueToLocator(prod));
 			productElem.click();
-//			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/div[@id='toast-container']")));
-//			waitForVisibilityOfElement("/div[@id='toast-container']");
-			fluentWaitIgnoringTimeoutForInvisibility(loadingScreen);
+			waitForVisibilityOfElement(loadingScreen);
+			waitForInvisibilityOfElement(loadingScreen);
 		}
 		cartElem.click();
-		return true;
+		Assert.assertTrue(true);
+		return new Cart(driver);
 	}
 }

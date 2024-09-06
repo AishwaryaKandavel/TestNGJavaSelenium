@@ -13,12 +13,8 @@
     <classes>
       <class name="eCommerceApp.Tests.StandAloneTest">
         <methods>
-          <include name="captureOrderDetails"/>
-          <include name="checkout"/>
-          <include name="addToCartAndVerify" invocation-numbers="0"/>
-          <include name="login"/>
+          <include name="E2E" invocation-numbers="0"/>
           <include name="initializeDriver"/>
-          <include name="verifyCart"/>
           <include name="closeDriver"/>
         </methods>
       </class> <!-- eCommerceApp.Tests.StandAloneTest -->

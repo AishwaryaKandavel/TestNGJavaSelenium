@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import eCommerce.AbstractComponents.UtilityFunctions;
 
@@ -33,12 +34,13 @@ public class Login extends UtilityFunctions{
 	
 	By signOut = By.xpath("//button[normalize-space(text())='Sign Out']");
 	
-	public boolean loginToApp(String emailID, String pwd) {
+	public Products loginToApp(String emailID, String pwd) {
 		userEmail.sendKeys(emailID);
 		userPassword.sendKeys(pwd);
 		login.click();
 		//AnchorElementOnTheNextPage
-		return waitForElementToBeClickable(signOut).isEnabled();
+		Assert.assertTrue(waitForElementToBeClickable(signOut).isEnabled());
+		return new Products(driver);
 	}
 	public void goTo(String URL) {
 		driver.get(URL);

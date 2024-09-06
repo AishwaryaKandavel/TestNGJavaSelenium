@@ -38,12 +38,13 @@ public class Payment extends UtilityFunctions{
 		return countryBy;
 	}
 	
-	public void checkout(String country) {
+	public EndPage checkout(String country) {
 		waitForElementToBeClickable(countryElem).sendKeys(country);
 		waitForElementToBeClickable(setCountryValueToLocator(country)).click();
 		placeOrder.click();
 		
 		List<WebElement> confirmationMsg = waitForVisibilityOfAllElement(confirmationMsgBy);
 		Assert.assertTrue(confirmationMsg.size()>0);
+		return new EndPage(driver);
 	}
 }

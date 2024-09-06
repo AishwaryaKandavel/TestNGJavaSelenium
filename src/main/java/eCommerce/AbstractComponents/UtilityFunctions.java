@@ -25,8 +25,8 @@ public class UtilityFunctions {
 				withTimeout(Duration.ofSeconds(5)).
 				pollingEvery(Duration.ofSeconds(1)).ignoring(NoSuchElementException.class);
 	}
-	public void findAnElement(String locator) {
-		
+	public WebElement findAnElement(By by) {
+		return driver.findElement(by);
 	}
 	public WebElement waitForElementToBeClickable(By by) {
 		return wait.until(
@@ -57,10 +57,10 @@ public class UtilityFunctions {
 		actions.moveToElement(elem);
 		actions.perform();
 	}
-	public void fluentWaitIgnoringTimeoutForVisibility(String loc) {
+	public void fluentWaitForVisibility(String loc) {
 		fWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(loc)));
 	}
-	public void fluentWaitIgnoringTimeoutForInvisibility(By by) {
+	public void fluentWaitInvisibility(By by) {
 		fWait.until(ExpectedConditions.invisibilityOfElementLocated(by));
 	}
 }
