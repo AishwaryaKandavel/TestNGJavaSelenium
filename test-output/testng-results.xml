@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-05T20:48:38 IST" name="ECommerce" finished-at="2024-09-05T20:48:51 IST" duration-ms="13228">
+  <suite started-at="2024-09-07T02:02:12 IST" name="ECommerce" finished-at="2024-09-07T02:02:33 IST" duration-ms="20429">
     <groups>
     </groups>
-    <test started-at="2024-09-05T20:48:38 IST" name="E2E" finished-at="2024-09-05T20:48:51 IST" duration-ms="13228">
+    <test started-at="2024-09-07T02:02:12 IST" name="E2E" finished-at="2024-09-07T02:02:33 IST" duration-ms="20429">
       <class name="eCommerceApp.Tests.StandAloneTest">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:eCommerceApp.Tests.StandAloneTest@25ce9dc4]" started-at="2024-09-05T20:48:35 IST" name="initializeDriver" finished-at="2024-09-05T20:48:38 IST" duration-ms="2272" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://rahulshettyacademy.com/client]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:eCommerceApp.Tests.StandAloneTest@7d0b7e3c]" started-at="2024-09-07T02:02:09 IST" name="initializeDriver" finished-at="2024-09-07T02:02:12 IST" duration-ms="2978" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.StandAloneTest@25ce9dc4]" started-at="2024-09-05T20:48:38 IST" name="login" finished-at="2024-09-05T20:48:40 IST" duration-ms="2172" status="PASS">
+        <test-method signature="E2E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.StandAloneTest@7d0b7e3c]" started-at="2024-09-07T02:02:12 IST" name="E2E" finished-at="2024-09-07T02:02:33 IST" duration-ms="20398" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,35 +28,12 @@
                 <![CDATA[RahulShetty@1295]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="addToCartAndVerify(java.lang.String)[pri:0, instance:eCommerceApp.Tests.StandAloneTest@25ce9dc4]" started-at="2024-09-05T20:48:40 IST" name="addToCartAndVerify" finished-at="2024-09-05T20:48:49 IST" depends-on-methods="eCommerceApp.Tests.StandAloneTest.login" duration-ms="9466" status="PASS">
-          <params>
-            <param index="0">
+            <param index="3">
               <value>
                 <![CDATA[ZARA COAT 3;IPHONE 13 PRO]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCartAndVerify -->
-        <test-method signature="verifyCart(java.lang.String)[pri:0, instance:eCommerceApp.Tests.StandAloneTest@25ce9dc4]" started-at="2024-09-05T20:48:49 IST" name="verifyCart" finished-at="2024-09-05T20:48:50 IST" depends-on-methods="eCommerceApp.Tests.StandAloneTest.addToCartAndVerify" duration-ms="530" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ZARA COAT 3;IPHONE 13 PRO]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCart -->
-        <test-method signature="checkout(java.lang.String)[pri:0, instance:eCommerceApp.Tests.StandAloneTest@25ce9dc4]" started-at="2024-09-05T20:48:50 IST" name="checkout" finished-at="2024-09-05T20:48:51 IST" depends-on-methods="eCommerceApp.Tests.StandAloneTest.verifyCart" duration-ms="875" status="PASS">
-          <params>
-            <param index="0">
+            <param index="4">
               <value>
                 <![CDATA[India]]>
               </value>
@@ -71,19 +41,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkout -->
-        <test-method signature="captureOrderDetails(java.lang.String)[pri:0, instance:eCommerceApp.Tests.StandAloneTest@25ce9dc4]" started-at="2024-09-05T20:48:51 IST" name="captureOrderDetails" finished-at="2024-09-05T20:48:51 IST" depends-on-methods="eCommerceApp.Tests.StandAloneTest.checkout" duration-ms="39" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ZARA COAT 3;IPHONE 13 PRO]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureOrderDetails -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:eCommerceApp.Tests.StandAloneTest@25ce9dc4]" started-at="2024-09-05T20:48:51 IST" name="closeDriver" finished-at="2024-09-05T20:48:51 IST" duration-ms="389" status="PASS">
+        </test-method> <!-- E2E -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:eCommerceApp.Tests.StandAloneTest@7d0b7e3c]" started-at="2024-09-07T02:02:33 IST" name="closeDriver" finished-at="2024-09-07T02:02:33 IST" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
