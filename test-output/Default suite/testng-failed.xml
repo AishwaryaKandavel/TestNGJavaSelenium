@@ -5,13 +5,9 @@
     <classes>
       <class name="eCommerceApp.Tests.StandAloneTest">
         <methods>
-          <include name="captureOrderDetails"/>
-          <include name="checkout"/>
-          <include name="addToCartAndVerify"/>
-          <include name="initializeDriver"/>
-          <include name="login"/>
-          <include name="verifyCart"/>
-          <include name="closeDriver"/>
+          <include name="launchApp"/>
+          <include name="ErrorValidationLogin"/>
+          <include name="closeBrowser"/>
         </methods>
       </class> <!-- eCommerceApp.Tests.StandAloneTest -->
     </classes>
