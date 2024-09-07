@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [ECommerce]" guice-stage="DEVELOPMENT" verbose="0">
+<suite parallel="methods" name="Failed suite [ECommerce]" guice-stage="DEVELOPMENT" verbose="0">
   <parameter name="password" value="RahulShetty@1295"/>
   <parameter name="emailID" value="henrycavillpookie@gmail.com"/>
   <parameter name="URL" value="https://rahulshettyacademy.com/client"/>
   <listeners>
     <listener class-name="eCommerce.AbstractComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" name="E2E(failed)" verbose="0">
+  <test thread-count="5" parallel="methods" name="Positive(failed)" verbose="0">
     <parameter name="country" value="India"/>
     <parameter name="productList" value="ZARA COAT 3;IPHONE 13 PRO"/>
     <classes>
-      <class name="eCommerceApp.Tests.StandAloneTest">
+      <class name="eCommerceApp.Tests.Positive">
         <methods>
-          <include name="E2E2" invocation-numbers="0"/>
-          <include name="initializeDriver"/>
-          <include name="closeDriver"/>
+          <include name="E2E"/>
+          <include name="launchApp"/>
+          <include name="verifyOrders"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- eCommerceApp.Tests.StandAloneTest -->
+      </class> <!-- eCommerceApp.Tests.Positive -->
     </classes>
-  </test> <!-- E2E(failed) -->
+  </test> <!-- Positive(failed) -->
+  <test thread-count="5" parallel="methods" name="Negative(failed)" verbose="0">
+    <parameter name="productList" value="ZARA COAT 3;IPHONE 13 PRO"/>
+    <classes>
+      <class name="eCommerceApp.Tests.Negative">
+        <methods>
+          <include name="loginErrorValidation" invocation-numbers="0"/>
+          <include name="forgotPwdPageError"/>
+          <include name="launchApp"/>
+          <include name="closeBrowser"/>
+          <include name="registerPageError"/>
+        </methods>
+      </class> <!-- eCommerceApp.Tests.Negative -->
+    </classes>
+  </test> <!-- Negative(failed) -->
 </suite> <!-- Failed suite [ECommerce] -->

@@ -17,49 +17,52 @@ public class UtilityFunctions {
 	WebDriver driver;
 	Wait<WebDriver> wait;
 	Wait<WebDriver> fWait;
-	
+
 	public UtilityFunctions(WebDriver driver) {
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		fWait = new FluentWait<WebDriver>(driver).
-				withTimeout(Duration.ofSeconds(5)).
-				pollingEvery(Duration.ofSeconds(1)).ignoring(NoSuchElementException.class);
+		fWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(5)).pollingEvery(Duration.ofSeconds(1))
+				.ignoring(NoSuchElementException.class);
 	}
+
 	public WebElement findAnElement(By by) {
 		return driver.findElement(by);
 	}
+
 	public WebElement waitForElementToBeClickable(By by) {
-		return wait.until(
-				ExpectedConditions.elementToBeClickable(by));
+		return wait.until(ExpectedConditions.elementToBeClickable(by));
 	}
+
 	public WebElement waitForElementToBeClickable(WebElement elem) {
-		return wait.until(
-				ExpectedConditions.elementToBeClickable(elem));
+		return wait.until(ExpectedConditions.elementToBeClickable(elem));
 	}
+
 	public WebElement waitForVisibilityOfElement(By by) {
-		return wait.until(
-				ExpectedConditions.visibilityOfElementLocated(by));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
+
 	public List<WebElement> waitForVisibilityOfAllElement(By by) {
-		return wait.until(
-				ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
+		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
 	}
+
 	public Boolean waitForInvisibilityOfElement(By by) {
-		return wait.until(
-				ExpectedConditions.invisibilityOfElementLocated(by));
+		return wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
 	}
+
 	public WebElement waitForVisibilityOfElement(String locator) {
-		return wait.until(
-				ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
 	}
+
 	public void moveToElement(WebElement elem) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(elem);
 		actions.perform();
 	}
+
 	public void fluentWaitForVisibility(String loc) {
 		fWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(loc)));
 	}
+
 	public void fluentWaitInvisibility(By by) {
 		fWait.until(ExpectedConditions.invisibilityOfElementLocated(by));
 	}
