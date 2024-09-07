@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-07T23:54:55 IST" name="ECommerce" finished-at="2024-09-07T23:55:26 IST" duration-ms="30618">
+  <suite started-at="2024-09-08T00:40:08 IST" name="ECommerce" finished-at="2024-09-08T00:40:52 IST" duration-ms="43771">
     <groups>
       <group name="bulkOrder">
-        <method signature="BulkOrder.E2E(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" name="E2E" class="eCommerceApp.Tests.BulkOrder"/>
+        <method signature="BulkOrder.E2E(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" name="E2E" class="eCommerceApp.Tests.BulkOrder"/>
       </group> <!-- bulkOrder -->
     </groups>
-    <test started-at="2024-09-07T23:54:55 IST" name="Positive" finished-at="2024-09-07T23:54:55 IST" duration-ms="26">
+    <test started-at="2024-09-08T00:40:08 IST" name="Positive" finished-at="2024-09-08T00:40:08 IST" duration-ms="21">
     </test> <!-- Positive -->
-    <test started-at="2024-09-07T23:54:55 IST" name="Negative" finished-at="2024-09-07T23:54:55 IST" duration-ms="26">
+    <test started-at="2024-09-08T00:40:08 IST" name="Negative" finished-at="2024-09-08T00:40:08 IST" duration-ms="22">
     </test> <!-- Negative -->
-    <test started-at="2024-09-07T23:54:55 IST" name="BulkOrder" finished-at="2024-09-07T23:55:26 IST" duration-ms="30618">
+    <test started-at="2024-09-08T00:40:08 IST" name="BulkOrder" finished-at="2024-09-08T00:40:52 IST" duration-ms="43771">
       <class name="eCommerceApp.Tests.BulkOrder">
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-07T23:54:55 IST" name="launchApp" finished-at="2024-09-07T23:54:57 IST" duration-ms="2384" status="PASS">
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-08T00:40:08 IST" name="launchApp" finished-at="2024-09-08T00:40:11 IST" duration-ms="2681" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,37 +25,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="E2E(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-07T23:54:57 IST" name="E2E" data-provider="getData" finished-at="2024-09-07T23:55:12 IST" duration-ms="14555" status="PASS">
+        <test-method signature="E2E(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-08T00:40:11 IST" name="E2E" data-provider="getData" finished-at="2024-09-08T00:40:30 IST" duration-ms="19362" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[henrycavillpookie@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[RahulShetty@1295]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ZARA COAT 3;IPHONE 13 PRO]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[India]]>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- E2E -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-07T23:55:12 IST" name="closeBrowser" finished-at="2024-09-07T23:55:12 IST" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-08T00:40:30 IST" name="closeBrowser" finished-at="2024-09-08T00:40:30 IST" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-07T23:55:12 IST" name="launchApp" finished-at="2024-09-07T23:55:15 IST" duration-ms="3337" status="PASS">
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-08T00:40:30 IST" name="launchApp" finished-at="2024-09-08T00:40:32 IST" duration-ms="1865" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,33 +51,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="E2E(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-07T23:55:15 IST" name="E2E" data-provider="getData" finished-at="2024-09-07T23:55:25 IST" duration-ms="9808" status="PASS">
+        <test-method signature="E2E(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-08T00:40:32 IST" name="E2E" data-provider="getData" finished-at="2024-09-08T00:40:51 IST" duration-ms="19345" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[hughjackmanpookie@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[RahulShetty@1235]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ADIDAS ORIGINAL;ZARA COAT 3]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Ireland]]>
+                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- E2E -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-07T23:55:25 IST" name="closeBrowser" finished-at="2024-09-07T23:55:26 IST" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@24569dba]" started-at="2024-09-08T00:40:51 IST" name="closeBrowser" finished-at="2024-09-08T00:40:52 IST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
