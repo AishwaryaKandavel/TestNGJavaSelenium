@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="eCommerceApp.Tests.StandAloneTest">
+      <class name="eCommerceApp.Tests.Negative">
         <methods>
           <include name="launchApp"/>
-          <include name="ErrorValidationLogin"/>
+          <include name="registerPageError"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- eCommerceApp.Tests.StandAloneTest -->
+      </class> <!-- eCommerceApp.Tests.Negative -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
