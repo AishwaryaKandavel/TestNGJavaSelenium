@@ -17,8 +17,11 @@ public class Reporter {
 		this.driver = driver;
 	}
 
-	public void report() throws IOException {
-		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(file, new File("/SeleniumJavaFrameworkECommerceApp/target"));
+	public String report(String testCaseName) throws IOException {
+		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String destPath = System.getProperty("user.dir") 
+				+ "/target/screenshot/"+testCaseName+System.currentTimeMillis()+".png";
+		FileUtils.copyFile(srcFile, new File(destPath));
+		return destPath;
 	}
 }

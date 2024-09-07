@@ -22,23 +22,34 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
+import eCommerce.AbstractComponents.JSONHandler;
 import eCommerce.AbstractComponents.Reporter;
 import eCommerce.POM.Login;
 
 public class InitializeDriver {
+	
+	protected Properties prop = new Properties();
+	protected JSONHandler jsonHandler;
+	
 	WebDriver driver;
-	Properties prop = new Properties();
 	Wait<WebDriver> wait;
 	Reporter report;
 	protected Login login;
-
-	public WebDriver initializeBrowser() throws IOException {
-
+	
+	
+	@BeforeSuite(alwaysRun = true)
+	public void initializeProperties() throws IOException {
 		FileInputStream fis = new FileInputStream(
 				new File(System.getProperty("user.dir") + "/src/main/resources/runConfig.properties"));
 		prop.load(fis);
+		jsonHandler = new JSONHandler(prop);
+		report = new Reporter(driver);
+	}
+
+	public WebDriver initializeBrowser() throws IOException {
 
 		String browser = prop.getProperty("browser").toLowerCase();
 
@@ -122,7 +133,6 @@ public class InitializeDriver {
 	public void launchApp(String url) throws IOException {
 		driver = initializeBrowser();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		report = new Reporter(driver);
 		login = new Login(driver);
 		login.goTo(url);
 	}

@@ -1,0 +1,26 @@
+[
+	{
+		"emailID": "henrycavillpookie@gmail.com",
+		"password": "RahulShetty@1295",
+		"products": "ZARA COAT 3;IPHONE 13 PRO",
+		"country": "India"
+	},
+	{
+		"emailID": "hughjackmanpookie@gmail.com",
+		"password": "RahulShetty@1235",
+		"products": "ADIDAS ORIGINAL;ZARA COAT 3",
+		"country": "Ireland"
+	},
+	{
+		"emailID": "henrycavillpookie@gmail.com",
+		"password": "RahulShetty@1295",
+		"products": "ADIDAS ORIGINAL;ZARA COAT 3",
+		"country": "India"
+	},
+	{
+		"emailID": "hughjackmanpookie@gmail.com",
+		"password": "RahulShetty@1235",
+		"products": "ZARA COAT 3;IPHONE 13 PRO",
+		"country": "Ireland"
+	}
+]
