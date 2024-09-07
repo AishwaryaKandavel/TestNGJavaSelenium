@@ -4,12 +4,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.IntStream;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 //import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.fasterxml.jackson.core.exc.StreamReadException;
+import com.fasterxml.jackson.databind.DatabindException;
 import eCommerce.POM.*;
 import eCommerce.baseClass.InitializeDriver;
 
@@ -34,19 +37,9 @@ public class BulkOrder extends InitializeDriver {
 	}
 
 	@DataProvider
-	public Object[][] getData() {
-		HashMap<Object, Object> data1 = new HashMap<Object, Object>();
-		data1.put("emailID", "henrycavillpookie@gmail.com");
-		data1.put("password", "RahulShetty@1295");
-		data1.put("products", "ZARA COAT 3;IPHONE 13 PRO");
-		data1.put("country", "India");
-
-		HashMap<Object, Object> data2 = new HashMap<Object, Object>();
-		data2.put("emailID", "hughjackmanpookie@gmail.com");
-		data2.put("password", "RahulShetty@1235");
-		data2.put("products", "ADIDAS ORIGINAL;ZARA COAT 3");
-		data2.put("country", "Ireland");
-
-		return new Object[][] { { data1 }, { data2 } };
+	public Object[][] getData() throws StreamReadException, DatabindException, IOException {
+		
+		List<HashMap<Object, Object>> data = jsonHandler.getJSONDataToMap("bulkOrderData");
+		return IntStream.range(0, data.size()).mapToObj(i->new Object[] {data.get(i)}).toArray(Object[][]::new);
 	}
 }
