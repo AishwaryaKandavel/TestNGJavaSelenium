@@ -15,7 +15,7 @@ public class Positive extends InitializeDriver {
 	List<String> orderIDs = new ArrayList<String>();
 	
 	@Parameters({"emailID", "password", "productList", "country" })
-	@Test(enabled = true)
+	@Test(enabled = true, description = "E2E flow for placing an order", testName = "Place Order")
 	public void E2E(String emailID, String password, String products, String country) throws IOException {
 		Products product = login.loginToApp(emailID, password);
 		Cart cart = product.addProductsToCart(products);
@@ -25,7 +25,8 @@ public class Positive extends InitializeDriver {
 	}
 	
 	@Parameters({"emailID", "password", "productList"})
-	@Test(enabled = true, dependsOnMethods = "E2E")
+	@Test(enabled = true, dependsOnMethods = "E2E", description = "Verification of the placed order", 
+	testName = "Verify Order")
 	public void verifyOrders(String emailID, String password, String products) throws IOException {
 		Products product = login.loginToApp(emailID, password);
 		Orders orders = product.openOrders();

@@ -1,86 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-08T02:57:30 IST" name="ECommerce" finished-at="2024-09-08T02:57:56 IST" duration-ms="26319">
+  <suite started-at="2024-09-09T02:28:44 IST" name="ECommerce" finished-at="2024-09-09T02:31:23 IST" duration-ms="159369">
     <groups>
       <group name="errorHandling">
-        <method signature="Negative.forgotPwdPageError()[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" name="forgotPwdPageError" class="eCommerceApp.Tests.Negative"/>
-        <method signature="Negative.loginErrorValidation(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" name="loginErrorValidation" class="eCommerceApp.Tests.Negative"/>
-        <method signature="Negative.registerPageError()[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" name="registerPageError" class="eCommerceApp.Tests.Negative"/>
+        <method signature="Negative.forgotPwdPageError()[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" name="forgotPwdPageError" class="eCommerceApp.Tests.Negative"/>
+        <method signature="Negative.loginErrorValidation(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" name="loginErrorValidation" class="eCommerceApp.Tests.Negative"/>
+        <method signature="Negative.registerPageError()[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" name="registerPageError" class="eCommerceApp.Tests.Negative"/>
       </group> <!-- errorHandling -->
+      <group name="bulkOrder">
+        <method signature="BulkOrder.E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" name="E2E_BulkOrder" class="eCommerceApp.Tests.BulkOrder"/>
+      </group> <!-- bulkOrder -->
     </groups>
-    <test started-at="2024-09-08T02:57:30 IST" name="Negative" finished-at="2024-09-08T02:57:43 IST" duration-ms="13618">
-      <class name="eCommerceApp.Tests.Negative">
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" started-at="2024-09-08T02:57:30 IST" name="launchApp" finished-at="2024-09-08T02:57:33 IST" duration-ms="3213" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://rahulshettyacademy.com/client]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApp -->
-        <test-method signature="forgotPwdPageError()[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" started-at="2024-09-08T02:57:33 IST" name="forgotPwdPageError" finished-at="2024-09-08T02:57:33 IST" duration-ms="724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- forgotPwdPageError -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" started-at="2024-09-08T02:57:34 IST" name="closeBrowser" finished-at="2024-09-08T02:57:34 IST" duration-ms="325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" started-at="2024-09-08T02:57:34 IST" name="launchApp" finished-at="2024-09-08T02:57:37 IST" duration-ms="3290" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://rahulshettyacademy.com/client]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApp -->
-        <test-method signature="loginErrorValidation(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" started-at="2024-09-08T02:57:37 IST" name="loginErrorValidation" finished-at="2024-09-08T02:57:39 IST" duration-ms="1620" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[henrycavillpookie@gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginErrorValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" started-at="2024-09-08T02:57:39 IST" name="closeBrowser" finished-at="2024-09-08T02:57:39 IST" duration-ms="127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" started-at="2024-09-08T02:57:39 IST" name="launchApp" finished-at="2024-09-08T02:57:42 IST" duration-ms="3524" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://rahulshettyacademy.com/client]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApp -->
-        <test-method signature="registerPageError()[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" started-at="2024-09-08T02:57:42 IST" name="registerPageError" finished-at="2024-09-08T02:57:43 IST" duration-ms="518" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerPageError -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Negative@69e153c5]" started-at="2024-09-08T02:57:43 IST" name="closeBrowser" finished-at="2024-09-08T02:57:43 IST" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- eCommerceApp.Tests.Negative -->
-    </test> <!-- Negative -->
-    <test started-at="2024-09-08T02:57:30 IST" name="Positive" finished-at="2024-09-08T02:57:56 IST" duration-ms="26319">
+    <test started-at="2024-09-09T02:28:44 IST" name="Positive" finished-at="2024-09-09T02:29:14 IST" duration-ms="30226">
       <class name="eCommerceApp.Tests.Positive">
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@ffaa6af]" started-at="2024-09-08T02:57:30 IST" name="launchApp" finished-at="2024-09-08T02:57:33 IST" duration-ms="3322" status="PASS">
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@4ae9cfc1]" started-at="2024-09-09T02:28:44 IST" name="launchApp" finished-at="2024-09-09T02:28:48 IST" duration-ms="3777" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="E2E(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@ffaa6af]" started-at="2024-09-08T02:57:33 IST" name="E2E" finished-at="2024-09-08T02:57:53 IST" duration-ms="19954" status="PASS">
+        <test-method signature="E2E(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@4ae9cfc1]" started-at="2024-09-09T02:28:48 IST" name="E2E" description="E2E flow for placing an order" finished-at="2024-09-09T02:29:07 IST" duration-ms="19696" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,11 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- E2E -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Positive@ffaa6af]" started-at="2024-09-08T02:57:53 IST" name="closeBrowser" finished-at="2024-09-08T02:57:53 IST" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Positive@4ae9cfc1]" started-at="2024-09-09T02:29:09 IST" name="closeBrowser" finished-at="2024-09-09T02:29:09 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@ffaa6af]" started-at="2024-09-08T02:57:53 IST" name="launchApp" finished-at="2024-09-08T02:57:55 IST" duration-ms="1788" status="PASS">
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@4ae9cfc1]" started-at="2024-09-09T02:29:09 IST" name="launchApp" finished-at="2024-09-09T02:29:12 IST" duration-ms="2983" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -132,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="verifyOrders(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@ffaa6af]" started-at="2024-09-08T02:57:55 IST" name="verifyOrders" finished-at="2024-09-08T02:57:56 IST" depends-on-methods="eCommerceApp.Tests.Positive.E2E" duration-ms="916" status="PASS">
+        <test-method signature="verifyOrders(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@4ae9cfc1]" started-at="2024-09-09T02:29:12 IST" name="verifyOrders" description="Verification of the placed order" finished-at="2024-09-09T02:29:13 IST" depends-on-methods="eCommerceApp.Tests.Positive.E2E" duration-ms="1359" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -153,11 +88,273 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrders -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Positive@ffaa6af]" started-at="2024-09-08T02:57:56 IST" name="closeBrowser" finished-at="2024-09-08T02:57:56 IST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Positive@4ae9cfc1]" started-at="2024-09-09T02:29:14 IST" name="closeBrowser" finished-at="2024-09-09T02:29:14 IST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- eCommerceApp.Tests.Positive -->
     </test> <!-- Positive -->
+    <test started-at="2024-09-09T02:29:15 IST" name="Negative" finished-at="2024-09-09T02:29:47 IST" duration-ms="32268">
+      <class name="eCommerceApp.Tests.Negative">
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:15 IST" name="launchApp" finished-at="2024-09-09T02:29:18 IST" duration-ms="3287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="forgotPwdPageError()[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:18 IST" name="forgotPwdPageError" description="Error validation for the forgot password page" finished-at="2024-09-09T02:29:19 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPwdPageError -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:20 IST" name="closeBrowser" finished-at="2024-09-09T02:29:20 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:20 IST" name="launchApp" finished-at="2024-09-09T02:29:23 IST" duration-ms="3035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:23 IST" name="loginErrorValidation" description="Error validation for the login page" data-provider="getData" finished-at="2024-09-09T02:29:24 IST" duration-ms="766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=incorrect, emailID=henrycavillpookie@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:27 IST" name="closeBrowser" finished-at="2024-09-09T02:29:27 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:27 IST" name="launchApp" finished-at="2024-09-09T02:29:30 IST" duration-ms="3321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="loginErrorValidation(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:30 IST" name="loginErrorValidation" description="Error validation for the login page" data-provider="getData" finished-at="2024-09-09T02:29:41 IST" duration-ms="10576" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[normalize-space(text())='Incorrect email or password.'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55371/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 290d4f7534678a84a7b89fbdf824d0a5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[normalize-space(text())='Incorrect email or password.'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55371/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 290d4f7534678a84a7b89fbdf824d0a5
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at eCommerce.AbstractComponents.UtilityFunctions.waitForVisibilityOfElement(UtilityFunctions.java:41)
+at eCommerce.POM.Login.loginErrorMsgValidation(Login.java:57)
+at eCommerceApp.Tests.Negative.loginErrorValidation(Negative.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:42 IST" name="closeBrowser" finished-at="2024-09-09T02:29:42 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:42 IST" name="launchApp" finished-at="2024-09-09T02:29:44 IST" duration-ms="2740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="registerPageError()[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:44 IST" name="registerPageError" description="Error validation for the register page" finished-at="2024-09-09T02:29:45 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerPageError -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Negative@2e6a5539]" started-at="2024-09-09T02:29:47 IST" name="closeBrowser" finished-at="2024-09-09T02:29:47 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- eCommerceApp.Tests.Negative -->
+    </test> <!-- Negative -->
+    <test started-at="2024-09-09T02:29:47 IST" name="BulkOrder" finished-at="2024-09-09T02:31:23 IST" duration-ms="95858">
+      <class name="eCommerceApp.Tests.BulkOrder">
+        <test-method is-config="true" signature="initializeProperties()[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:28:44 IST" name="initializeProperties" finished-at="2024-09-09T02:28:44 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeProperties -->
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:29:47 IST" name="launchApp" finished-at="2024-09-09T02:29:51 IST" duration-ms="3561" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:29:51 IST" name="E2E_BulkOrder" description="Complete E2E bulk orders flow and verification of the same" data-provider="getData" finished-at="2024-09-09T02:30:10 IST" duration-ms="19102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:30:11 IST" name="closeBrowser" finished-at="2024-09-09T02:30:11 IST" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:30:11 IST" name="launchApp" finished-at="2024-09-09T02:30:15 IST" duration-ms="3624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:30:15 IST" name="E2E_BulkOrder" description="Complete E2E bulk orders flow and verification of the same" data-provider="getData" finished-at="2024-09-09T02:30:34 IST" duration-ms="18828" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:30:35 IST" name="closeBrowser" finished-at="2024-09-09T02:30:35 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:30:35 IST" name="launchApp" finished-at="2024-09-09T02:30:38 IST" duration-ms="3043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:30:38 IST" name="E2E_BulkOrder" description="Complete E2E bulk orders flow and verification of the same" data-provider="getData" finished-at="2024-09-09T02:30:58 IST" duration-ms="19732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:30:59 IST" name="closeBrowser" finished-at="2024-09-09T02:30:59 IST" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:30:59 IST" name="launchApp" finished-at="2024-09-09T02:31:02 IST" duration-ms="3250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://rahulshettyacademy.com/client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:31:02 IST" name="E2E_BulkOrder" description="Complete E2E bulk orders flow and verification of the same" data-provider="getData" finished-at="2024-09-09T02:31:22 IST" duration-ms="20275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@b7c4869]" started-at="2024-09-09T02:31:23 IST" name="closeBrowser" finished-at="2024-09-09T02:31:23 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- eCommerceApp.Tests.BulkOrder -->
+    </test> <!-- BulkOrder -->
   </suite> <!-- ECommerce -->
 </testng-results>
