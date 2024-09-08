@@ -8,7 +8,6 @@ import java.util.stream.IntStream;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
-//import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.exc.StreamReadException;
@@ -19,9 +18,9 @@ import eCommerce.baseClass.InitializeDriver;
 public class BulkOrder extends InitializeDriver {
 	List<String> orderIDs = new ArrayList<String>();
 
-//	@Parameters({"emailID", "password", "productList", "country" })
-	@Test(enabled = true, dataProvider = "getData", groups = "bulkOrder")
-	public void E2E(HashMap<Object, Object> data) throws IOException {
+	@Test(enabled = true, dataProvider = "getData", groups = "bulkOrder", description = "Complete E2E bulk orders "
+			+ "flow and verification of the same", testName = "E2E Order - Bulk")
+	public void E2E_BulkOrder(HashMap<Object, Object> data) throws IOException {
 		String emailID = (String) data.get("emailID");
 		String password = (String) data.get("password");
 		String products = (String) data.get("products");

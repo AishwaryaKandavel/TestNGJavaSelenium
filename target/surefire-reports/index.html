@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-ECommerce" class="navigator-link">
-              <span class="suite-name border-passed">ECommerce</span>
+              <span class="suite-name border-failed">ECommerce</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,12 +55,12 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-ECommerce" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-ECommerce" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ECommerce" class="hide-methods failed suite-ECommerce"> (hide)</a> <!-- hide-methods failed suite-ECommerce -->
+                      <a href="#" panel-name="suite-ECommerce" class="show-methods failed suite-ECommerce"> (show)</a> <!-- show-methods failed suite-ECommerce -->
+                    </span>
+                    <div class="method-list-content failed suite-ECommerce">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.Negative" class="method navigator-link" hash-for-method="loginErrorValidation({password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com})">loginErrorValidation({password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ECommerce -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,12 +122,32 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrder" class="method navigator-link" hash-for-method="E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)">E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrder" class="method navigator-link" hash-for-method="E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIG...)">E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIG...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrder" class="method navigator-link" hash-for-method="E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS OR...)">E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS OR...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrder" class="method navigator-link" hash-for-method="E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3...)">E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.Negative" class="method navigator-link" hash-for-method="forgotPwdPageError">forgotPwdPageError</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.Negative" class="method navigator-link" hash-for-method="loginErrorValidation(henrycavillpookie@gmail.com)">loginErrorValidation(henrycavillpookie@gmail.com)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.Negative" class="method navigator-link" hash-for-method="loginErrorValidation({password=incorrect, emailID=henrycavillpookie@gmail.com})">loginErrorValidation({password=incorrect, emailID=henrycavillpookie@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +172,86 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ECommerce" class="panel ECommerce">
+          <div class="suite-ECommerce-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">eCommerceApp.Tests.Negative</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginErrorValidation({password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com})">
+                  </a> <!-- loginErrorValidation({password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com}) -->
+                  <span class="method-name">loginErrorValidation</span>
+                  <span class="parameters">({password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com})</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[normalize-space(text())=&apos;Incorrect email or password.&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55371/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 290d4f7534678a84a7b89fbdf824d0a5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at eCommerce.AbstractComponents.UtilityFunctions.waitForVisibilityOfElement(UtilityFunctions.java:41)
+	at eCommerce.POM.Login.loginErrorMsgValidation(Login.java:57)
+	at eCommerceApp.Tests.Negative.loginErrorValidation(Negative.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Error validation for the login page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ECommerce-class-failed -->
+          <div class="suite-ECommerce-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">eCommerceApp.Tests.BulkOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)">
+                  </a> <!-- E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...) -->
+                  <span class="method-name">E2E_BulkOrder</span>
+                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO})</span>
+                  <em>
+(Complete E2E bulk orders flow and verification of the same)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIG...)">
+                  </a> <!-- E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIG...) -->
+                  <span class="method-name">E2E_BulkOrder</span>
+                  <span class="parameters">({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3})</span>
+                  <em>
+(Complete E2E bulk orders flow and verification of the same)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS OR...)">
+                  </a> <!-- E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS OR...) -->
+                  <span class="method-name">E2E_BulkOrder</span>
+                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3})</span>
+                  <em>
+(Complete E2E bulk orders flow and verification of the same)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3...)">
+                  </a> <!-- E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3...) -->
+                  <span class="method-name">E2E_BulkOrder</span>
+                  <span class="parameters">({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO})</span>
+                  <em>
+(Complete E2E bulk orders flow and verification of the same)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ECommerce-class-passed -->
           <div class="suite-ECommerce-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -150,6 +264,8 @@
                   </a> <!-- E2E(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO, India) -->
                   <span class="method-name">E2E</span>
                   <span class="parameters">(henrycavillpookie@gmail.com,RahulShetty@1295,ZARA COAT 3;IPHONE 13 PRO,India)</span>
+                  <em>
+(E2E flow for placing an order)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -158,6 +274,8 @@
                   </a> <!-- verifyOrders(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO) -->
                   <span class="method-name">verifyOrders</span>
                   <span class="parameters">(henrycavillpookie@gmail.com,RahulShetty@1295,ZARA COAT 3;IPHONE 13 PRO)</span>
+                  <em>
+(Verification of the placed order)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -173,14 +291,18 @@
                   <a name="forgotPwdPageError">
                   </a> <!-- forgotPwdPageError -->
                   <span class="method-name">forgotPwdPageError</span>
+                  <em>
+(Error validation for the forgot password page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginErrorValidation(henrycavillpookie@gmail.com)">
-                  </a> <!-- loginErrorValidation(henrycavillpookie@gmail.com) -->
+                  <a name="loginErrorValidation({password=incorrect, emailID=henrycavillpookie@gmail.com})">
+                  </a> <!-- loginErrorValidation({password=incorrect, emailID=henrycavillpookie@gmail.com}) -->
                   <span class="method-name">loginErrorValidation</span>
-                  <span class="parameters">(henrycavillpookie@gmail.com)</span>
+                  <span class="parameters">({password=incorrect, emailID=henrycavillpookie@gmail.com})</span>
+                  <em>
+(Error validation for the login page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -188,6 +310,8 @@
                   <a name="registerPageError">
                   </a> <!-- registerPageError -->
                   <span class="method-name">registerPageError</span>
+                  <em>
+(Error validation for the register page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,26 +325,33 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;tests&quot; name=&quot;ECommerce&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;ECommerce&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;parameter name=&quot;password&quot; value=&quot;RahulShetty@1295&quot;/&gt;
   &lt;parameter name=&quot;emailID&quot; value=&quot;henrycavillpookie@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;URL&quot; value=&quot;https://rahulshettyacademy.com/client&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;eCommerce.AbstractComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Positive&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Positive&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;country&quot; value=&quot;India&quot;/&gt;
     &lt;parameter name=&quot;productList&quot; value=&quot;ZARA COAT 3;IPHONE 13 PRO&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;eCommerceApp.Tests.Positive&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Positive --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Negative&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Negative&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;productList&quot; value=&quot;ZARA COAT 3;IPHONE 13 PRO&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;eCommerceApp.Tests.Negative&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Negative --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;BulkOrder&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;country&quot; value=&quot;India&quot;/&gt;
+    &lt;parameter name=&quot;productList&quot; value=&quot;ZARA COAT 3;IPHONE 13 PRO&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;eCommerceApp.Tests.BulkOrder&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BulkOrder --&gt;
 &lt;/suite&gt; &lt;!-- ECommerce --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,6 +368,9 @@
               <li>
                 <span class="test-name">Negative (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">BulkOrder (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -245,6 +379,14 @@
             <span class="header-content">Groups for ECommerce</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">bulkOrder</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">E2E_BulkOrder</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
             <div class="test-group">
               <span class="test-group-name">errorHandling</span>
               <br/>
@@ -277,32 +419,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'E2E')
-data.setCell(0, 2, 'eCommerceApp.Tests.Positive')
-data.setCell(0, 3, 19954);
+data.setCell(0, 1, 'E2E_BulkOrder')
+data.setCell(0, 2, 'eCommerceApp.Tests.BulkOrder')
+data.setCell(0, 3, 20275);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginErrorValidation')
-data.setCell(1, 2, 'eCommerceApp.Tests.Negative')
-data.setCell(1, 3, 1620);
+data.setCell(1, 1, 'E2E_BulkOrder')
+data.setCell(1, 2, 'eCommerceApp.Tests.BulkOrder')
+data.setCell(1, 3, 19732);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyOrders')
+data.setCell(2, 1, 'E2E')
 data.setCell(2, 2, 'eCommerceApp.Tests.Positive')
-data.setCell(2, 3, 916);
+data.setCell(2, 3, 19696);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'forgotPwdPageError')
-data.setCell(3, 2, 'eCommerceApp.Tests.Negative')
-data.setCell(3, 3, 724);
+data.setCell(3, 1, 'E2E_BulkOrder')
+data.setCell(3, 2, 'eCommerceApp.Tests.BulkOrder')
+data.setCell(3, 3, 19102);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'registerPageError')
-data.setCell(4, 2, 'eCommerceApp.Tests.Negative')
-data.setCell(4, 3, 518);
+data.setCell(4, 1, 'E2E_BulkOrder')
+data.setCell(4, 2, 'eCommerceApp.Tests.BulkOrder')
+data.setCell(4, 3, 18828);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginErrorValidation')
+data.setCell(5, 2, 'eCommerceApp.Tests.Negative')
+data.setCell(5, 3, 10576);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyOrders')
+data.setCell(6, 2, 'eCommerceApp.Tests.Positive')
+data.setCell(6, 3, 1359);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginErrorValidation')
+data.setCell(7, 2, 'eCommerceApp.Tests.Negative')
+data.setCell(7, 3, 766);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'forgotPwdPageError')
+data.setCell(8, 2, 'eCommerceApp.Tests.Negative')
+data.setCell(8, 3, 369);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'registerPageError')
+data.setCell(9, 2, 'eCommerceApp.Tests.Negative')
+data.setCell(9, 3, 294);
 window.suiteTableData['ECommerce']= { tableData: data, tableDiv: 'times-div-ECommerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-ECommerce">
               </div> <!-- times-div-ECommerce -->
             </div> <!-- times-div -->
@@ -328,78 +490,141 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">eCommerceApp.Tests.Positive</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initializeProperties</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">eCommerceApp.Tests.Negative</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">forgotPwdPageError</span>
-                <span class="method-start">3215 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">eCommerceApp.Tests.Positive</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
+                <span class="method-start">64 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">E2E(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO, India)</span>
-                <span class="method-start">3323 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">eCommerceApp.Tests.Negative</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">3944 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
-                <span class="method-start">4283 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginErrorValidation(henrycavillpookie@gmail.com)</span>
-                <span class="method-start">7573 ms</span>
+                <span class="method-start">3846 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">9196 ms</span>
+                <span class="method-start">24654 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
-                <span class="method-start">9323 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">registerPageError</span>
-                <span class="method-start">12847 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">13365 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">eCommerceApp.Tests.Positive</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">23278 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
-                <span class="method-start">23455 ms</span>
+                <span class="method-start">24768 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyOrders(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO)</span>
-                <span class="method-start">25243 ms</span>
+                <span class="method-start">27751 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">26159 ms</span>
+                <span class="method-start">29979 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.Negative</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
+                <span class="method-start">31168 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgotPwdPageError</span>
+                <span class="method-start">34455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">35641 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
+                <span class="method-start">36290 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginErrorValidation({password=incorrect, emailID=henrycavillpookie@gmail.com})</span>
+                <span class="method-start">39326 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">42865 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
+                <span class="method-start">43021 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginErrorValidation({password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com})</span>
+                <span class="method-start">46342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">57668 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
+                <span class="method-start">57802 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerPageError</span>
+                <span class="method-start">60543 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">63224 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
+                <span class="method-start">63542 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3...)</span>
+                <span class="method-start">67103 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">87056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
+                <span class="method-start">87567 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS OR...)</span>
+                <span class="method-start">91191 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">110679 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
+                <span class="method-start">110869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIG...)</span>
+                <span class="method-start">113912 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">134727 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
+                <span class="method-start">134891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)</span>
+                <span class="method-start">138141 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">159219 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

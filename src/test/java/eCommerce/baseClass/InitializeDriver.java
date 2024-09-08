@@ -26,17 +26,15 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 import eCommerce.AbstractComponents.JSONHandler;
-import eCommerce.AbstractComponents.Reporter;
 import eCommerce.POM.Login;
 
 public class InitializeDriver {
 	
-	protected Properties prop = new Properties();
-	protected JSONHandler jsonHandler;
+	protected static Properties prop = new Properties();
+	protected static JSONHandler jsonHandler;
 	
-	WebDriver driver;
+	public WebDriver driver;
 	Wait<WebDriver> wait;
-	Reporter report;
 	protected Login login;
 	
 	
@@ -46,11 +44,10 @@ public class InitializeDriver {
 				new File(System.getProperty("user.dir") + "/src/main/resources/runConfig.properties"));
 		prop.load(fis);
 		jsonHandler = new JSONHandler(prop);
-		report = new Reporter(driver);
 	}
 
 	public WebDriver initializeBrowser() throws IOException {
-
+		
 		String browser = prop.getProperty("browser").toLowerCase();
 
 		switch (browser) {
