@@ -48,7 +48,12 @@ public class InitializeDriver {
 
 	public WebDriver initializeBrowser() throws IOException {
 		
-		String browser = prop.getProperty("browser").toLowerCase();
+		String browser = System.getProperty("browser")!=null?
+				System.getProperty("browser"):
+					prop.getProperty("browser").toLowerCase();
+		
+		String headless = System.getProperty("headless")!=null?
+				System.getProperty("headless"):prop.getProperty("headless");
 
 		switch (browser) {
 
@@ -70,7 +75,7 @@ public class InitializeDriver {
 			List<String> arguments = new ArrayList<String>();
 			arguments.add("--start-maximized"); // maximize while starting
 			arguments.add("--disable-notifications"); // disable notifications
-			if (prop.getProperty("headless").equalsIgnoreCase("yes"))
+			if (headless.equalsIgnoreCase("yes"))
 				arguments.add("--headless"); // headless execution
 
 			if (browser.equalsIgnoreCase("chrome")) {
@@ -106,7 +111,7 @@ public class InitializeDriver {
 
 			FirefoxOptions options = new FirefoxOptions();
 			options.setProfile(profile);
-			if (prop.getProperty("headless").equalsIgnoreCase("yes")) {
+			if (headless.equalsIgnoreCase("yes")) {
 				options.addArguments("--headless");
 			}
 
@@ -122,6 +127,8 @@ public class InitializeDriver {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(3));
 		if (browser.equalsIgnoreCase("firefox"))
 			driver.manage().window().maximize();
+		if(headless.equalsIgnoreCase("yes"))
+			driver.manage().window().fullscreen();
 		return driver;
 	}
 	

@@ -15,11 +15,12 @@ import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.databind.DatabindException;
 
 import eCommerce.baseClass.InitializeDriver;
+import eCommerce.baseClass.RetryFlakyTests;
 
 public class Negative extends InitializeDriver {
 	@Parameters({ "emailID" })
 	@Test(groups = {"errorHandling" }, description = "Error validation for the login page", 
-			testName = "Login Error Validation", dataProvider = "getData")
+			testName = "Login Error Validation", dataProvider = "getData", retryAnalyzer = RetryFlakyTests.class)
 	public void loginErrorValidation(HashMap<Object, Object> data) {
 		String emailID = (String) data.get("emailID");
 		String password = (String) data.get("password");
@@ -28,7 +29,7 @@ public class Negative extends InitializeDriver {
 	}
 
 	@Test(groups = {"errorHandling" }, description = "Error validation for the register page", 
-			testName = "Registration Error Validation")
+			testName = "Registration Error Validation", retryAnalyzer = RetryFlakyTests.class)
 	public void registerPageError() throws IOException {
 		List<String> errorMsgValuesExpected = new ArrayList<String>();
 		errorMsgValuesExpected.add("*First Name is required");
@@ -41,7 +42,7 @@ public class Negative extends InitializeDriver {
 	}
 
 	@Test(groups = { "errorHandling" }, description = "Error validation for the forgot password page",
-			testName = "Forgot Password Error Validation")
+			testName = "Forgot Password Error Validation", retryAnalyzer = RetryFlakyTests.class)
 	public void forgotPwdPageError() throws IOException {
 		List<String> errorMsgValuesExpected = new ArrayList<String>();
 		errorMsgValuesExpected.add("*Email is required");

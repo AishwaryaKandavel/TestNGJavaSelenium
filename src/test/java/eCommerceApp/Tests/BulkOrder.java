@@ -12,14 +12,16 @@ import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.databind.DatabindException;
+
 import eCommerce.POM.*;
 import eCommerce.baseClass.InitializeDriver;
+import eCommerce.baseClass.RetryFlakyTests;
 
 public class BulkOrder extends InitializeDriver {
 	List<String> orderIDs = new ArrayList<String>();
 
 	@Test(enabled = true, dataProvider = "getData", groups = "bulkOrder", description = "Complete E2E bulk orders "
-			+ "flow and verification of the same", testName = "E2E Order - Bulk")
+			+ "flow and verification of the same", testName = "E2E Order - Bulk", retryAnalyzer = RetryFlakyTests.class)
 	public void E2E_BulkOrder(HashMap<Object, Object> data) throws IOException {
 		String emailID = (String) data.get("emailID");
 		String password = (String) data.get("password");
