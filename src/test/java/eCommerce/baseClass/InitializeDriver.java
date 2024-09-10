@@ -26,7 +26,6 @@ import org.testng.annotations.BeforeSuite;
 
 import eCommerce.AbstractComponents.JSONHandler;
 import eCommerce.POM.Login;
-import io.cucumber.java.BeforeAll;
 
 public class InitializeDriver {
 	
@@ -39,7 +38,6 @@ public class InitializeDriver {
 	
 	
 	@BeforeSuite(alwaysRun = true)
-	@BeforeAll
 	public void initializeProperties() throws IOException {
 		FileInputStream fis = new FileInputStream(
 				new File(System.getProperty("user.dir") + "/src/main/resources/runConfig.properties"));
