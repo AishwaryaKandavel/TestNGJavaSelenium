@@ -22,13 +22,13 @@ public class EndPage extends UtilityFunctions {
 	}
 
 	@FindBy(xpath = "//label[contains(text(),'|')]")
-	List<WebElement> ordersElem;
+	private List<WebElement> ordersElem;
 
 	@FindBy(xpath = "//button[text()='Click To Download Order Details in CSV']")
-	WebElement downloadCSV;
+	private WebElement downloadCSV;
 
 	@FindBy(xpath = "//button[text()='Click To Download Order Details in Excel']")
-	WebElement downloadExcel;
+	private WebElement downloadExcel;
 
 	public List<String> captureOrderDetails(String products) {
 		String[] productsArr = products.split(";");

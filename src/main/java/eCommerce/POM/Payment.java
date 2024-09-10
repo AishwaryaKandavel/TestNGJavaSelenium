@@ -21,10 +21,10 @@ public class Payment extends UtilityFunctions {
 	}
 
 	@FindBy(xpath = "//input[@placeholder='Select Country']")
-	WebElement countryElem;
+	private WebElement countryElem;
 
 	@FindBy(xpath = "//a[normalize-space(text())='Place Order']")
-	WebElement placeOrder;
+	private WebElement placeOrder;
 
 	By confirmationMsgBy = By.xpath("//*[normalize-space(text())='Thankyou for the order.']");
 

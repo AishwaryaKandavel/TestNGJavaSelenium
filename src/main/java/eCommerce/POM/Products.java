@@ -19,11 +19,10 @@ public class Products extends UtilityFunctions {
 		PageFactory.initElements(driver, this);
 	}
 
-	By loadingScreen = By.cssSelector(".ng-animating");
-	By continueShopping = By.xpath("//button[text()='Continue Shopping']");
+	private By loadingScreen = By.cssSelector(".ng-animating");
 
 	@FindBy(xpath = "//button[contains(text(),'Cart')]")
-	WebElement cartElem;
+	private WebElement cartElem;
 
 	public By setProductValueToLocator(String product) {
 		String productToAddLoc = "//b[normalize-space(text())='" + product

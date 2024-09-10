@@ -25,10 +25,10 @@ public class Cart extends UtilityFunctions {
 	}
 
 	@FindBy(xpath = "//div[@class='cartSection']/h3")
-	List<WebElement> productsAdded;
+	private List<WebElement> productsAdded;
 
 	@FindBy(xpath = "//button[text()='Checkout']")
-	WebElement checkOutElem;
+	private WebElement checkOutElem;
 
 	public Payment verifyCart(String products) {
 		String[] product = products.split(";");

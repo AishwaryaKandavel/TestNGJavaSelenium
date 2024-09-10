@@ -21,7 +21,7 @@ public class Orders extends UtilityFunctions{
 	}
 	
 	@FindBy(xpath="//tr[@class='ng-star-inserted']//th")
-	List<WebElement> orderIDsElem;
+	private List<WebElement> orderIDsElem;
 	
 	public boolean verifyOrders(List<String> orderIDs) {
 		boolean flag = false;

@@ -21,27 +21,27 @@ public class Login extends UtilityFunctions{
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(xpath="//input[@id='userEmail']")
-	WebElement userEmail;
+	private WebElement userEmail;
 	
 	@FindBy(xpath="//input[@id='userPassword']")
-	WebElement userPassword;
+	private WebElement userPassword;
 	
 	@FindBy(xpath="//input[@id='login']")
-	WebElement login;
+	private WebElement login;
 	
 	@FindBy(xpath="//a[text()='Register here']")
-	WebElement registerHere;
+	private WebElement registerHere;
 	
 	@FindBy(css=".invalid-feedback")
-	List<WebElement> errorMsgs;
+	private List<WebElement> errorMsgs;
 	
 	@FindBy(css=".forgot-password-link")
-	WebElement forgotPwd;
+	private WebElement forgotPwd;
 	
 	@FindBy(css="button[type='submit']")
-	WebElement submitBtn;
+	private WebElement submitBtn;
 	
-	By errorMsg = By.xpath("//*[normalize-space(text())='Incorrect email or password.']");
+	private By errorMsg = By.xpath("//*[normalize-space(text())='Incorrect email or password.']");
 	
 	public Products loginToApp(String emailID, String pwd) {
 		userEmail.sendKeys(emailID);

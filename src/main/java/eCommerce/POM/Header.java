@@ -18,16 +18,16 @@ public class Header extends UtilityFunctions{
 	}
 	
 	@FindBy(xpath="//button[contains(text(),'ORDERS')]")
-	WebElement orders;
+	private WebElement orders;
 	
 	@FindBy(xpath="//button[contains(text(),'Cart')]")
-	WebElement cart;
+	private WebElement cart;
 	
 	@FindBy(xpath="//button[contains(text(),'HOME')]")
-	WebElement home;
+	private WebElement home;
 	
 	@FindBy(xpath="//button[contains(text(),'Sign Out')]")
-	WebElement signout;
+	private WebElement signout;
 	
 	public Orders openOrders() {
 		orders.click();
