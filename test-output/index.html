@@ -171,9 +171,9 @@
                   <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[normalize-space(text())=&apos;Incorrect email or password.&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240819150008, moz:debuggerAddress: 127.0.0.1:39255, moz:geckodriverVersion: 0.35.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 29476, moz:profile: C:\Users\karth\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:39255/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: cc78c65e-0d18-4c48-99b2-95c40bd878c4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51138}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51138/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60a5cdfdf663a31d24fcefdc32078dbd
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at eCommerce.AbstractComponents.UtilityFunctions.waitForVisibilityOfElement(UtilityFunctions.java:41)
@@ -207,9 +207,9 @@ Session ID: cc78c65e-0d18-4c48-99b2-95c40bd878c4
                   <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[normalize-space(text())=&apos;Incorrect email or password.&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240819150008, moz:debuggerAddress: 127.0.0.1:4440, moz:geckodriverVersion: 0.35.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 25764, moz:profile: C:\Users\karth\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:4440/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 3ae6c004-823b-4d15-8f15-a96cb84663e1
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51116/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e0fc0a2b57bcb57c662db33761f5092
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at eCommerce.AbstractComponents.UtilityFunctions.waitForVisibilityOfElement(UtilityFunctions.java:41)
@@ -286,7 +286,6 @@ Session ID: 3ae6c004-823b-4d15-8f15-a96cb84663e1
   &lt;/groups&gt;
   &lt;parameter name=&quot;password&quot; value=&quot;RahulShetty@1295&quot;/&gt;
   &lt;parameter name=&quot;emailID&quot; value=&quot;henrycavillpookie@gmail.com&quot;/&gt;
-  &lt;parameter name=&quot;URL&quot; value=&quot;https://rahulshettyacademy.com/client&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;eCommerce.AbstractComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
@@ -363,28 +362,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginErrorValidation')
 data.setCell(0, 2, 'eCommerceApp.Tests.Negative')
-data.setCell(0, 3, 10482);
+data.setCell(0, 3, 11080);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginErrorValidation')
 data.setCell(1, 2, 'eCommerceApp.Tests.Negative')
-data.setCell(1, 3, 10413);
+data.setCell(1, 3, 10804);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'registerPageError')
+data.setCell(2, 1, 'loginErrorValidation')
 data.setCell(2, 2, 'eCommerceApp.Tests.Negative')
-data.setCell(2, 3, 579);
+data.setCell(2, 3, 1192);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'forgotPwdPageError')
+data.setCell(3, 1, 'registerPageError')
 data.setCell(3, 2, 'eCommerceApp.Tests.Negative')
-data.setCell(3, 3, 555);
+data.setCell(3, 3, 388);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginErrorValidation')
+data.setCell(4, 1, 'forgotPwdPageError')
 data.setCell(4, 2, 'eCommerceApp.Tests.Negative')
-data.setCell(4, 3, 488);
+data.setCell(4, 3, 262);
 window.suiteTableData['ECommerce']= { tableData: data, tableDiv: 'times-div-ECommerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 50 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-ECommerce">
               </div> <!-- times-div-ECommerce -->
             </div> <!-- times-div -->
@@ -425,66 +424,66 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
-                <span class="method-start">57 ms</span>
+                <span class="method-name">launchApp</span>
+                <span class="method-start">74 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">forgotPwdPageError</span>
-                <span class="method-start">4599 ms</span>
+                <span class="method-start">3720 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">5211 ms</span>
+                <span class="method-start">4237 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
-                <span class="method-start">6242 ms</span>
+                <span class="method-name">launchApp</span>
+                <span class="method-start">4678 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginErrorValidation({password=incorrect, emailID=henrycavillpookie@gmail.com})</span>
-                <span class="method-start">10893 ms</span>
+                <span class="method-start">7025 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">11605 ms</span>
+                <span class="method-start">9270 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
-                <span class="method-start">12741 ms</span>
+                <span class="method-name">launchApp</span>
+                <span class="method-start">9508 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginErrorValidation({password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com})</span>
-                <span class="method-start">17999 ms</span>
+                <span class="method-start">11615 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">28555 ms</span>
+                <span class="method-start">23150 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
-                <span class="method-start">29404 ms</span>
+                <span class="method-name">launchApp</span>
+                <span class="method-start">23316 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginErrorValidation({password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com})</span>
-                <span class="method-start">33404 ms</span>
+                <span class="method-start">26280 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">43881 ms</span>
+                <span class="method-start">37636 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchApp(https://rahulshettyacademy.com/client)</span>
-                <span class="method-start">44598 ms</span>
+                <span class="method-name">launchApp</span>
+                <span class="method-start">37955 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">registerPageError</span>
-                <span class="method-start">48698 ms</span>
+                <span class="method-start">39937 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">49413 ms</span>
+                <span class="method-start">40770 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

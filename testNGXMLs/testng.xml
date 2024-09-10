@@ -6,9 +6,7 @@
 	<listeners>
 		<listener class-name="eCommerce.AbstractComponents.Listeners"></listener>
 	</listeners>
-
-	<parameter name="URL"
-		value="https://rahulshettyacademy.com/client"></parameter>
+	
 	<parameter name="emailID" value="henrycavillpookie@gmail.com"></parameter>
 	<parameter name="password" value="RahulShetty@1295"></parameter>
 

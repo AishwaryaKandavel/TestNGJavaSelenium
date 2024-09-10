@@ -21,6 +21,24 @@
 
 	<profiles>
 		<profile>
+			<id>CucumberTests</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.3.0</version>
+							<configuration>
+								<includes>
+									<include>**/TestRunner.java</include>
+								</includes>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
+		<profile>
 			<id>Regression</id>
 			<build>
 				<pluginManagement>
@@ -144,8 +162,18 @@
 			<artifactId>extentreports</artifactId>
 			<version>5.1.2</version>
 		</dependency>
-
-
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.18.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.18.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -155,11 +183,6 @@
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.3.0</version>
-					<configuration>
-						<suiteXmlFiles>
-							<suiteXmlFile>testNGXMLs/testng.xml</suiteXmlFile>
-						</suiteXmlFiles>
-					</configuration>
 				</plugin>
 				<!-- clean lifecycle, see
 				https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->

@@ -23,10 +23,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
 
 import eCommerce.AbstractComponents.JSONHandler;
 import eCommerce.POM.Login;
+import io.cucumber.java.BeforeAll;
 
 public class InitializeDriver {
 	
@@ -35,10 +35,11 @@ public class InitializeDriver {
 	
 	public WebDriver driver;
 	Wait<WebDriver> wait;
-	protected Login login;
+	public Login login;
 	
 	
 	@BeforeSuite(alwaysRun = true)
+	@BeforeAll
 	public void initializeProperties() throws IOException {
 		FileInputStream fis = new FileInputStream(
 				new File(System.getProperty("user.dir") + "/src/main/resources/runConfig.properties"));
@@ -47,6 +48,11 @@ public class InitializeDriver {
 	}
 
 	public WebDriver initializeBrowser() throws IOException {
+		
+		FileInputStream fis = new FileInputStream(
+				new File(System.getProperty("user.dir") + "/src/main/resources/runConfig.properties"));
+		prop.clear();
+		prop.load(fis);
 		
 		String browser = System.getProperty("browser")!=null?
 				System.getProperty("browser"):
@@ -132,13 +138,12 @@ public class InitializeDriver {
 		return driver;
 	}
 	
-	@Parameters({ "URL"})
 	@BeforeMethod(alwaysRun = true)
-	public void launchApp(String url) throws IOException {
+	public void launchApp() throws IOException {
 		driver = initializeBrowser();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		login = new Login(driver);
-		login.goTo(url);
+		login.goTo(prop.getProperty("app_url"));
 	}
 
 	@AfterMethod(alwaysRun = true)

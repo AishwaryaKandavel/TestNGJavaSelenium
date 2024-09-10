@@ -1,94 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-10T01:40:36 IST" name="ECommerce" finished-at="2024-09-10T01:41:07 IST" duration-ms="30717">
+  <suite started-at="2024-09-11T03:16:29 IST" name="Surefire suite" finished-at="2024-09-11T03:16:34 IST" duration-ms="5460">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:eCommerce.testNGCucumberRunner.TestRunner@6580cfdd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-09-10T01:40:36 IST" name="Positive" finished-at="2024-09-10T01:41:07 IST" duration-ms="30717">
-      <class name="eCommerceApp.Tests.Positive">
-        <test-method is-config="true" signature="initializeProperties()[pri:0, instance:eCommerceApp.Tests.Positive@5965d37]" started-at="2024-09-10T01:40:36 IST" name="initializeProperties" finished-at="2024-09-10T01:40:36 IST" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeProperties -->
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@5965d37]" started-at="2024-09-10T01:40:36 IST" name="launchApp" finished-at="2024-09-10T01:40:41 IST" duration-ms="5157" status="PASS">
+    <test started-at="2024-09-11T03:16:29 IST" name="Surefire test" finished-at="2024-09-11T03:16:34 IST" duration-ms="5460">
+      <class name="eCommerce.testNGCucumberRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:eCommerce.testNGCucumberRunner.TestRunner@6580cfdd]" started-at="2024-09-11T03:16:29 IST" name="setUpClass" finished-at="2024-09-11T03:16:29 IST" duration-ms="665" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[https://rahulshettyacademy.com/client]]>
+                <![CDATA[org.testng.TestRunner@c6634d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApp -->
-        <test-method signature="E2E(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@5965d37]" started-at="2024-09-10T01:40:41 IST" name="E2E" description="E2E flow for placing an order" finished-at="2024-09-10T01:40:58 IST" duration-ms="16913" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:eCommerce.testNGCucumberRunner.TestRunner@6580cfdd]" started-at="2024-09-11T03:16:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-11T03:16:34 IST" duration-ms="4704" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[henrycavillpookie@gmail.com]]>
+                <![CDATA[""]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[RahulShetty@1295]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ZARA COAT 3;IPHONE 13 PRO]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[India]]>
+                <![CDATA["Title of your feature"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- E2E -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Positive@5965d37]" started-at="2024-09-10T01:41:00 IST" name="closeBrowser" finished-at="2024-09-10T01:41:00 IST" duration-ms="281" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:eCommerce.testNGCucumberRunner.TestRunner@6580cfdd]" started-at="2024-09-11T03:16:34 IST" name="tearDownClass" finished-at="2024-09-11T03:16:34 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@5965d37]" started-at="2024-09-10T01:41:00 IST" name="launchApp" finished-at="2024-09-10T01:41:05 IST" duration-ms="4706" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://rahulshettyacademy.com/client]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApp -->
-        <test-method signature="verifyOrders(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.Positive@5965d37]" started-at="2024-09-10T01:41:05 IST" name="verifyOrders" description="Verification of the placed order" finished-at="2024-09-10T01:41:06 IST" depends-on-methods="eCommerceApp.Tests.Positive.E2E" duration-ms="928" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[henrycavillpookie@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[RahulShetty@1295]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ZARA COAT 3;IPHONE 13 PRO]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOrders -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.Positive@5965d37]" started-at="2024-09-10T01:41:07 IST" name="closeBrowser" finished-at="2024-09-10T01:41:07 IST" duration-ms="154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- eCommerceApp.Tests.Positive -->
-    </test> <!-- Positive -->
-  </suite> <!-- ECommerce -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- eCommerce.testNGCucumberRunner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

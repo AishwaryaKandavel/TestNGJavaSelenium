@@ -3,7 +3,6 @@
 <suite parallel="tests" name="Failed suite [ECommerce]" guice-stage="DEVELOPMENT">
   <parameter name="password" value="RahulShetty@1295"/>
   <parameter name="emailID" value="henrycavillpookie@gmail.com"/>
-  <parameter name="URL" value="https://rahulshettyacademy.com/client"/>
   <listeners>
     <listener class-name="eCommerce.AbstractComponents.Listeners"/>
   </listeners>
