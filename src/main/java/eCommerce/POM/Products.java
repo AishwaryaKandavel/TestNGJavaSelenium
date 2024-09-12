@@ -1,6 +1,5 @@
 package eCommerce.POM;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -45,6 +44,7 @@ public class Products extends UtilityFunctions {
 		Assert.assertTrue(true);
 		return new Cart(driver);
 	}
+
 	public Orders openOrders() {
 		Header header = new Header(driver);
 		return header.openOrders();
