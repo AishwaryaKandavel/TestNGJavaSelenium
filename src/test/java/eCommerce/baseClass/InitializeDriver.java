@@ -24,6 +24,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import eCommerce.AbstractComponents.ExcelHandler;
 import eCommerce.AbstractComponents.JSONHandler;
 import eCommerce.POM.Login;
 
@@ -31,6 +32,7 @@ public class InitializeDriver {
 	
 	protected static Properties prop = new Properties();
 	protected static JSONHandler jsonHandler;
+	protected static ExcelHandler excelHandler;
 	
 	public WebDriver driver;
 	Wait<WebDriver> wait;
@@ -43,6 +45,7 @@ public class InitializeDriver {
 				new File(System.getProperty("user.dir") + "/src/main/resources/runConfig.properties"));
 		prop.load(fis);
 		jsonHandler = new JSONHandler(prop);
+		excelHandler = new ExcelHandler(prop);
 	}
 
 	public WebDriver initializeBrowser() throws IOException {
