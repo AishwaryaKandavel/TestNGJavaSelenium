@@ -39,8 +39,9 @@ public class BulkOrder extends InitializeDriver {
 
 	@DataProvider
 	public Object[][] getData() throws StreamReadException, DatabindException, IOException {
-		
+
 		List<HashMap<Object, Object>> data = jsonHandler.getJSONDataToMap("bulkOrderData");
-		return IntStream.range(0, data.size()).mapToObj(i->new Object[] {data.get(i)}).toArray(Object[][]::new);
+		return IntStream.range(0, data.size()).mapToObj(i -> new Object[] { data.get(i) }).toArray(Object[][]::new);
 	}
+
 }

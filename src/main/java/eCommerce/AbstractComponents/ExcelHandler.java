@@ -1,23 +1,17 @@
 package eCommerce.AbstractComponents;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
-import com.fasterxml.jackson.core.exc.StreamReadException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.DatabindException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class ExcelHandler {
 	
@@ -31,18 +25,32 @@ public class ExcelHandler {
 
 	}
 
-	public List<HashMap<Object, Object>> getExcelDataToMap(String filePath)
-			throws StreamReadException, DatabindException, IOException, InvalidFormatException {
-
-		File file = new File(System.getProperty("user.dir") + prop.getProperty(filePath));
-		XSSFWorkbook wf = new XSSFWorkbook(file);
-		int sheetCount = wf.getNumberOfSheets();
+	public List<HashMap<Object, Object>> getExcelDataToMap(String sheetName)
+			throws IOException, InvalidFormatException {
 		
-//		String content = Files.readString(path);
-//		ObjectMapper om = new ObjectMapper();
-//		List<HashMap<Object, Object>> result = om.readValue(content,
-//				new TypeReference<List<HashMap<Object, Object>>>() {
-//				});
-		return null;
+		List<HashMap<Object, Object>> result = new ArrayList<HashMap<Object,Object>>();
+		File file = new File(System.getProperty("user.dir") + prop.getProperty("excelData"));
+		XSSFWorkbook wf = new XSSFWorkbook(file);
+		XSSFSheet sheet = wf.getSheet(sheetName);
+		
+		Iterator<Row> rows = sheet.iterator();
+		Row headerRow = rows.next();
+		while(rows.hasNext()) {
+			HashMap<Object, Object> keyValCols = new HashMap<Object, Object>();
+			Row row = rows.next();
+			for (int i=0; i<row.getPhysicalNumberOfCells();i++) {
+				Object headerCell = headerRow.getCell(i).getStringCellValue();
+				Object rowCell;
+				try{
+					rowCell = row.getCell(i).getStringCellValue();
+				}catch(Exception e) {
+					rowCell = row.getCell(i).getNumericCellValue();
+				}
+				keyValCols.put(headerCell, rowCell);
+			}
+			result.add(keyValCols);
+		}
+		wf.close();
+		return result;
 	}
 }

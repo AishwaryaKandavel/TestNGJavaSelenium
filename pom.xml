@@ -110,6 +110,24 @@
 				</pluginManagement>
 			</build>
 		</profile>
+		<profile>
+			<id>BulkOrderUsingExcel</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.3.0</version>
+							<configuration>
+								<suiteXmlFiles>
+									<suiteXmlFile>testNGXMLs/BulkOrderUsingExcel.xml</suiteXmlFile>
+								</suiteXmlFiles>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
 	</profiles>
 
 	<dependencyManagement>
@@ -141,6 +159,17 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>5.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.24.0</version> <!-- Replace with the latest version -->
+		</dependency>
+		<!-- Log4j2 Core (the implementation) -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.24.0</version> <!-- Replace with the latest version -->
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
