@@ -27,6 +27,7 @@ import org.testng.annotations.BeforeSuite;
 import eCommerce.AbstractComponents.ExcelHandler;
 import eCommerce.AbstractComponents.JSONHandler;
 import eCommerce.POM.Login;
+import eCommerce.POM.PriceList;
 
 public class InitializeDriver {
 	
@@ -37,7 +38,7 @@ public class InitializeDriver {
 	public WebDriver driver;
 	Wait<WebDriver> wait;
 	public Login login;
-	
+	public PriceList priceList;
 	
 	@BeforeSuite(alwaysRun = true)
 	public void initializeProperties() throws IOException {
@@ -130,8 +131,8 @@ public class InitializeDriver {
 			throw new IllegalArgumentException("Unexpected value: " + browser);
 		}
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(3));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		if (browser.equalsIgnoreCase("firefox"))
 			driver.manage().window().maximize();
 		if(headless.equalsIgnoreCase("yes"))
@@ -143,8 +144,11 @@ public class InitializeDriver {
 	public void launchApp() throws IOException {
 		driver = initializeBrowser();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		String appName = prop.getProperty("appName");
 		login = new Login(driver);
-		login.goTo(prop.getProperty("app_url"));
+		login.goTo(prop.getProperty(appName+"_url"));
+		if(appName.equalsIgnoreCase("priceList"))
+			priceList = new PriceList(driver, excelHandler);
 	}
 
 	@AfterMethod(alwaysRun = true)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="ECommerce" parallel="tests" thread-count="2">
-<!-- <suite name="ECommerce"> -->
+<!-- <suite name="ECommerce" parallel="tests" thread-count="2"> -->
+<suite name="ECommerce">
 
 	<listeners>
 		<listener class-name="eCommerce.AbstractComponents.Listeners"></listener>
@@ -15,25 +15,34 @@
 			value="ZARA COAT 3;IPHONE 13 PRO"></parameter>
 		<parameter name="country" value="India"></parameter>
 		<classes>
-			<class name="eCommerceApp.Tests.Positive" />
+			<class name="eCommerceApp.Tests.PurchaseOrder" />
 		</classes>
 	</test> 
-	
-	<test name="BulkOrder">
-		<parameter name="productList"
-			value="ZARA COAT 3;IPHONE 13 PRO"></parameter>
-		<parameter name="country" value="India"></parameter>
-		<classes>
-			<class name="eCommerceApp.Tests.BulkOrder" />
-		</classes>
-	</test>
 
 	<test name="Negative">
 		<parameter name="productList"
 			value="ZARA COAT 3;IPHONE 13 PRO"></parameter>
 		<classes>
-			<class name="eCommerceApp.Tests.Negative" />
+			<class name="eCommerceApp.Tests.ErrorHandling" />
 		</classes>
 	</test>
+	
+	<test thread-count="5" name="BulkOrder">
+		<classes>
+			<class name="eCommerceApp.Tests.BulkOrder" />
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="bulkOrderUsingExcel">
+		<classes>
+			<class name="eCommerceApp.Tests.BulkOrderUsingExcel" />
+		</classes>
+	</test>
+	
+<!-- 	<test thread-count="5" name="priceList"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="eCommerceApp.Tests.PriceList" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 	
 </suite> 

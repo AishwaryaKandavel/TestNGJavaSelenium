@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-ECommerce" class="navigator-link">
-              <span class="suite-name border-skipped">ECommerce</span>
+              <span class="suite-name border-failed">ECommerce</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,17 +50,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-ECommerce" class="navigator-link ">
-                    <span>C:\Users\karth\eclipse-workspace\SeleniumJavaFrameworkECommerceApp\testNGXMLs\BulkOrderUsingExcel.xml</span>
+                    <span>C:\Users\karth\eclipse-workspace\SeleniumJavaFrameworkECommerceApp\testNGXMLs\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-ECommerce" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-ECommerce" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,  1 skipped,  4 passed</span>
+                    <span class="method-stats">13 methods, 2 failed,  3 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ECommerce" class="hide-methods failed suite-ECommerce"> (hide)</a> <!-- hide-methods failed suite-ECommerce -->
+                      <a href="#" panel-name="suite-ECommerce" class="show-methods failed suite-ECommerce"> (show)</a> <!-- show-methods failed suite-ECommerce -->
+                    </span>
+                    <div class="method-list-content failed suite-ECommerce">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=A...)">E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=A...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZAR...)">E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZAR...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ECommerce -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Retried methods</span>
@@ -103,7 +122,17 @@
                     <div class="method-list-content skipped suite-ECommerce">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products...)">E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=A...)">E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=A...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZAR...)">E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZAR...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrder" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)">E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-ECommerce -->
@@ -117,22 +146,42 @@
                     <div class="method-list-content passed suite-ECommerce">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2.0, products...)">E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2.0, products...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3, products=ADI...)">E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3, products=ADI...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1.0, products=Z...)">E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1.0, products=Z...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4, products=Z...)">E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4, products=Z...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3.0, products=A...)">E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3.0, products=A...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrder" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS OR...)">E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS OR...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrderUsingExcel" class="method navigator-link" hash-for-method="E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products...)">E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrder" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)">E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrder" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_JSON({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3...)">E2E_BulkOrder_Using_JSON({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.BulkOrder" class="method navigator-link" hash-for-method="E2E_BulkOrder_Using_JSON({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIG...)">E2E_BulkOrder_Using_JSON({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIG...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.PurchaseOrder" class="method navigator-link" hash-for-method="purchaseOrder(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO, India)">purchaseOrder(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO, India)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ECommerce" title="eCommerceApp.Tests.PurchaseOrder" class="method navigator-link" hash-for-method="verifyOrders(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO)">verifyOrders(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-ECommerce -->
@@ -147,6 +196,54 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ECommerce" class="panel ECommerce">
+          <div class="suite-ECommerce-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">eCommerceApp.Tests.BulkOrderUsingExcel</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=A...)">
+                  </a> <!-- E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=A...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_Excel</span>
+                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=ADIDAS ORIGINAL;ZARA COAT 3})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+	at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Complete E2E bulk orders flow and verification of the same using excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZAR...)">
+                  </a> <!-- E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZAR...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_Excel</span>
+                  <span class="parameters">({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZARA COAT 3;IPHONE 13 PRO})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+	at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Complete E2E bulk orders flow and verification of the same using excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ECommerce-class-failed -->
           <div class="suite-ECommerce-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -155,30 +252,70 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products...)">
-                  </a> <!-- E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products...) -->
-                  <span class="method-name">E2E_BulkOrder</span>
-                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products=ZARA COAT 3;IPHONE 13 PRO})</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ng-animating (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57145/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d55a522a5e4a142c3654c74fc682c577
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at eCommerce.AbstractComponents.UtilityFunctions.waitForVisibilityOfElement(UtilityFunctions.java:41)
-	at eCommerce.POM.Products.addProductsToCart(Products.java:40)
-	at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder(BulkOrderUsingExcel.java:33)
+                  <a name="E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=A...)">
+                  </a> <!-- E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=A...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_Excel</span>
+                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=ADIDAS ORIGINAL;ZARA COAT 3})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+	at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Complete E2E bulk orders flow and verification of the same)                  </em>
+(Complete E2E bulk orders flow and verification of the same using excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZAR...)">
+                  </a> <!-- E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZAR...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_Excel</span>
+                  <span class="parameters">({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZARA COAT 3;IPHONE 13 PRO})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+	at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Complete E2E bulk orders flow and verification of the same using excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ECommerce-class-skipped -->
+          <div class="suite-ECommerce-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">eCommerceApp.Tests.BulkOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)">
+                  </a> <!-- E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_JSON</span>
+                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+	at eCommerceApp.Tests.BulkOrder.E2E_BulkOrder_Using_JSON(BulkOrder.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Complete E2E bulk orders flow and verification of the same using JSON)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,42 +328,98 @@ Session ID: d55a522a5e4a142c3654c74fc682c577
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2.0, products...)">
-                  </a> <!-- E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2.0, products...) -->
-                  <span class="method-name">E2E_BulkOrder</span>
-                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2.0, products=ADIDAS ORIGINAL;ZARA COAT 3})</span>
+                  <a name="E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3, products=ADI...)">
+                  </a> <!-- E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3, products=ADI...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_Excel</span>
+                  <span class="parameters">({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3, products=ADIDAS ORIGINAL;ZARA COAT 3})</span>
                   <em>
-(Complete E2E bulk orders flow and verification of the same)                  </em>
+(Complete E2E bulk orders flow and verification of the same using excel)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1.0, products=Z...)">
-                  </a> <!-- E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1.0, products=Z...) -->
-                  <span class="method-name">E2E_BulkOrder</span>
-                  <span class="parameters">({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1.0, products=ZARA COAT 3;IPHONE 13 PRO})</span>
+                  <a name="E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4, products=Z...)">
+                  </a> <!-- E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4, products=Z...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_Excel</span>
+                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4, products=ZARA COAT 3;IPHONE 13 PRO})</span>
                   <em>
-(Complete E2E bulk orders flow and verification of the same)                  </em>
+(Complete E2E bulk orders flow and verification of the same using excel)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ECommerce-class-passed -->
+          <div class="suite-ECommerce-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">eCommerceApp.Tests.BulkOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS OR...)">
+                  </a> <!-- E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS OR...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_JSON</span>
+                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3})</span>
+                  <em>
+(Complete E2E bulk orders flow and verification of the same using JSON)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3.0, products=A...)">
-                  </a> <!-- E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3.0, products=A...) -->
-                  <span class="method-name">E2E_BulkOrder</span>
-                  <span class="parameters">({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3.0, products=ADIDAS ORIGINAL;ZARA COAT 3})</span>
+                  <a name="E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)">
+                  </a> <!-- E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_JSON</span>
+                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO})</span>
                   <em>
-(Complete E2E bulk orders flow and verification of the same)                  </em>
+(Complete E2E bulk orders flow and verification of the same using JSON)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products...)">
-                  </a> <!-- E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products...) -->
-                  <span class="method-name">E2E_BulkOrder</span>
-                  <span class="parameters">({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products=ZARA COAT 3;IPHONE 13 PRO})</span>
+                  <a name="E2E_BulkOrder_Using_JSON({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3...)">
+                  </a> <!-- E2E_BulkOrder_Using_JSON({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_JSON</span>
+                  <span class="parameters">({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO})</span>
                   <em>
-(Complete E2E bulk orders flow and verification of the same)                  </em>
+(Complete E2E bulk orders flow and verification of the same using JSON)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E2E_BulkOrder_Using_JSON({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIG...)">
+                  </a> <!-- E2E_BulkOrder_Using_JSON({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIG...) -->
+                  <span class="method-name">E2E_BulkOrder_Using_JSON</span>
+                  <span class="parameters">({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3})</span>
+                  <em>
+(Complete E2E bulk orders flow and verification of the same using JSON)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ECommerce-class-passed -->
+          <div class="suite-ECommerce-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">eCommerceApp.Tests.PurchaseOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseOrder(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO, India)">
+                  </a> <!-- purchaseOrder(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO, India) -->
+                  <span class="method-name">purchaseOrder</span>
+                  <span class="parameters">(henrycavillpookie@gmail.com,RahulShetty@1295,ZARA COAT 3;IPHONE 13 PRO,India)</span>
+                  <em>
+(E2E flow for placing an order)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOrders(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO)">
+                  </a> <!-- verifyOrders(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO) -->
+                  <span class="method-name">verifyOrders</span>
+                  <span class="parameters">(henrycavillpookie@gmail.com,RahulShetty@1295,ZARA COAT 3;IPHONE 13 PRO)</span>
+                  <em>
+(Verification of the placed order)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,26 +427,36 @@ Session ID: d55a522a5e4a142c3654c74fc682c577
         </div> <!-- panel ECommerce -->
         <div panel-name="test-xml-ECommerce" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\karth\eclipse-workspace\SeleniumJavaFrameworkECommerceApp\testNGXMLs\BulkOrderUsingExcel.xml</span>
+            <span class="header-content">C:\Users\karth\eclipse-workspace\SeleniumJavaFrameworkECommerceApp\testNGXMLs\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;tests&quot; name=&quot;ECommerce&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;bulkOrderUsingExcel&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
-  &lt;groups&gt;
-    &lt;run&gt;
-      &lt;include name=&quot;bulkOrderUsingExcel&quot;/&gt;
-    &lt;/run&gt;
-  &lt;/groups&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ECommerce&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;RahulShetty@1295&quot;/&gt;
+  &lt;parameter name=&quot;emailID&quot; value=&quot;henrycavillpookie@gmail.com&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;eCommerce.AbstractComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Positive&quot;&gt;
+    &lt;parameter name=&quot;country&quot; value=&quot;India&quot;/&gt;
+    &lt;parameter name=&quot;productList&quot; value=&quot;ZARA COAT 3;IPHONE 13 PRO&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;eCommerceApp.Tests.PurchaseOrder&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Positive --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Negative&quot;&gt;
+    &lt;parameter name=&quot;productList&quot; value=&quot;ZARA COAT 3;IPHONE 13 PRO&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;eCommerceApp.Tests.ErrorHandling&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Negative --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;BulkOrder&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;eCommerceApp.Tests.BulkOrder&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BulkOrder --&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;bulkOrderUsingExcel&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;eCommerceApp.Tests.BulkOrderUsingExcel&quot;/&gt;
@@ -270,6 +473,15 @@ Session ID: d55a522a5e4a142c3654c74fc682c577
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">Positive (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Negative (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">BulkOrder (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">bulkOrderUsingExcel (1 class)</span>
               </li>
             </ul>
@@ -281,10 +493,18 @@ Session ID: d55a522a5e4a142c3654c74fc682c577
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">bulkOrder</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">E2E_BulkOrder_Using_JSON</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">bulkOrderUsingExcel</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">E2E_BulkOrder</span>
+                <span class="method-in-group-name">E2E_BulkOrder_Using_Excel</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -304,32 +524,64 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'E2E_BulkOrder')
+data.setCell(0, 1, 'E2E_BulkOrder_Using_Excel')
 data.setCell(0, 2, 'eCommerceApp.Tests.BulkOrderUsingExcel')
-data.setCell(0, 3, 21802);
+data.setCell(0, 3, 48883);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'E2E_BulkOrder')
-data.setCell(1, 2, 'eCommerceApp.Tests.BulkOrderUsingExcel')
-data.setCell(1, 3, 19043);
+data.setCell(1, 1, 'E2E_BulkOrder_Using_JSON')
+data.setCell(1, 2, 'eCommerceApp.Tests.BulkOrder')
+data.setCell(1, 3, 43040);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'E2E_BulkOrder')
-data.setCell(2, 2, 'eCommerceApp.Tests.BulkOrderUsingExcel')
-data.setCell(2, 3, 19018);
+data.setCell(2, 1, 'E2E_BulkOrder_Using_JSON')
+data.setCell(2, 2, 'eCommerceApp.Tests.BulkOrder')
+data.setCell(2, 3, 42965);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'E2E_BulkOrder')
-data.setCell(3, 2, 'eCommerceApp.Tests.BulkOrderUsingExcel')
-data.setCell(3, 3, 18860);
+data.setCell(3, 1, 'E2E_BulkOrder_Using_JSON')
+data.setCell(3, 2, 'eCommerceApp.Tests.BulkOrder')
+data.setCell(3, 3, 41839);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'E2E_BulkOrder')
+data.setCell(4, 1, 'E2E_BulkOrder_Using_Excel')
 data.setCell(4, 2, 'eCommerceApp.Tests.BulkOrderUsingExcel')
-data.setCell(4, 3, 14097);
+data.setCell(4, 3, 40994);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'E2E_BulkOrder_Using_Excel')
+data.setCell(5, 2, 'eCommerceApp.Tests.BulkOrderUsingExcel')
+data.setCell(5, 3, 40795);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'purchaseOrder')
+data.setCell(6, 2, 'eCommerceApp.Tests.PurchaseOrder')
+data.setCell(6, 3, 40430);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'E2E_BulkOrder_Using_JSON')
+data.setCell(7, 2, 'eCommerceApp.Tests.BulkOrder')
+data.setCell(7, 3, 39921);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'E2E_BulkOrder_Using_Excel')
+data.setCell(8, 2, 'eCommerceApp.Tests.BulkOrderUsingExcel')
+data.setCell(8, 3, 39085);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'E2E_BulkOrder_Using_Excel')
+data.setCell(9, 2, 'eCommerceApp.Tests.BulkOrderUsingExcel')
+data.setCell(9, 3, 38202);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'E2E_BulkOrder_Using_Excel')
+data.setCell(10, 2, 'eCommerceApp.Tests.BulkOrderUsingExcel')
+data.setCell(10, 3, 37417);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'E2E_BulkOrder_Using_JSON')
+data.setCell(11, 2, 'eCommerceApp.Tests.BulkOrder')
+data.setCell(11, 3, 31282);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyOrders')
+data.setCell(12, 2, 'eCommerceApp.Tests.PurchaseOrder')
+data.setCell(12, 3, 3802);
 window.suiteTableData['ECommerce']= { tableData: data, tableDiv: 'times-div-ECommerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-ECommerce">
               </div> <!-- times-div-ECommerce -->
             </div> <!-- times-div -->
@@ -360,65 +612,256 @@ return data;
                 <span class="method-name">initializeProperties</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.PurchaseOrder</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp</span>
-                <span class="method-start">1138 ms</span>
+                <span class="method-start">83 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.ErrorHandling</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">84 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.PurchaseOrder</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1.0, products=Z...)</span>
-                <span class="method-start">3669 ms</span>
+                <span class="method-name">purchaseOrder(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO, India)</span>
+                <span class="method-start">4600 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.ErrorHandling</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">forgotPwdPageError</span>
+                <span class="method-start">5390 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">23058 ms</span>
+                <span class="method-start">5873 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp</span>
-                <span class="method-start">23233 ms</span>
+                <span class="method-start">6188 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2.0, products...)</span>
-                <span class="method-start">25393 ms</span>
+                <span class="method-name">loginErrorValidation({password=incorrect, emailID=henrycavillpookie@gmail.com})</span>
+                <span class="method-start">9342 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">44540 ms</span>
+                <span class="method-start">12134 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp</span>
-                <span class="method-start">44700 ms</span>
+                <span class="method-start">12356 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">E2E_BulkOrder({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3.0, products=A...)</span>
-                <span class="method-start">47658 ms</span>
+                <span class="method-name">loginErrorValidation({password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com})</span>
+                <span class="method-start">16958 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">67004 ms</span>
+                <span class="method-start">39028 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp</span>
-                <span class="method-start">67216 ms</span>
+                <span class="method-start">39187 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products...)</span>
-                <span class="method-start">69208 ms</span>
-              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.PurchaseOrder</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">91398 ms</span>
+                <span class="method-start">53942 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp</span>
-                <span class="method-start">91595 ms</span>
+                <span class="method-start">54133 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">E2E_BulkOrder({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products...)</span>
-                <span class="method-start">93414 ms</span>
+                <span class="method-name">verifyOrders(henrycavillpookie@gmail.com, RahulShetty@1295, ZARA COAT 3;IPHONE 13 PRO)</span>
+                <span class="method-start">55950 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">107852 ms</span>
+                <span class="method-start">60031 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">61051 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder_Using_JSON({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3...)</span>
+                <span class="method-start">65239 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrderUsingExcel</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">67090 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZAR...)</span>
+                <span class="method-start">71592 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">99629 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">99840 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS OR...)</span>
+                <span class="method-start">103791 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrderUsingExcel</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">116635 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">116771 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZAR...)</span>
+                <span class="method-start">121232 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">147304 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">147432 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder_Using_JSON({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIG...)</span>
+                <span class="method-start">152384 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrderUsingExcel</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">178133 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">178282 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=A...)</span>
+                <span class="method-start">182947 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">195679 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">195820 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)</span>
+                <span class="method-start">199946 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrderUsingExcel</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">226039 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">226180 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=A...)</span>
+                <span class="method-start">229865 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">243923 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">244067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder_Using_JSON({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT...)</span>
+                <span class="method-start">248428 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrderUsingExcel</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">274892 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">275062 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder_Using_Excel({country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3, products=ADI...)</span>
+                <span class="method-start">279197 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrder</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">292058 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">eCommerceApp.Tests.BulkOrderUsingExcel</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">320525 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">320677 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E2E_BulkOrder_Using_Excel({country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4, products=Z...)</span>
+                <span class="method-start">323712 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">364783 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

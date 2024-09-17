@@ -9,30 +9,67 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">ECommerce</th></tr>
-<tr><td><a href="#t0">bulkOrderUsingExcel</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">107,980</td><td>bulkOrderUsingExcel</td><td></td></tr>
+<tr><td><a href="#t0">Positive</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">60,122</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">BulkOrder</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">231,194</td><td></td><td></td></tr>
+<tr><td><a href="#t2">bulkOrderUsingExcel</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">2</td><td class="num">300,787</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num attn">3</th><th class="num attn">2</th><th class="num">592,103</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ECommerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">bulkOrderUsingExcel &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">eCommerceApp.Tests.BulkOrderUsingExcel</td><td><a href="#m0">E2E_BulkOrder</a></td><td rowspan="1">1726523635525</td><td rowspan="1">21802</td></tr><tr><th colspan="4">bulkOrderUsingExcel &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">eCommerceApp.Tests.BulkOrderUsingExcel</td><td><a href="#m1">E2E_BulkOrder</a></td><td rowspan="4">1726523591710</td><td rowspan="4">18860</td></tr><tr class="passedeven"><td><a href="#m2">E2E_BulkOrder</a></td></tr><tr class="passedeven"><td><a href="#m3">E2E_BulkOrder</a></td></tr><tr class="passedeven"><td><a href="#m4">E2E_BulkOrder</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ECommerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Positive &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">eCommerceApp.Tests.PurchaseOrder</td><td><a href="#m0">purchaseOrder</a></td><td rowspan="1">1726606197410</td><td rowspan="1">40430</td></tr><tr class="passedeven"><td><a href="#m1">verifyOrders</a></td><td rowspan="1">1726606248760</td><td rowspan="1">3802</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">BulkOrder &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">eCommerceApp.Tests.BulkOrder</td><td><a href="#m2">E2E_BulkOrder_Using_JSON</a></td><td rowspan="1">1726606392756</td><td rowspan="1">39921</td></tr><tr><th colspan="4">BulkOrder &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">eCommerceApp.Tests.BulkOrder</td><td><a href="#m3">E2E_BulkOrder_Using_JSON</a></td><td rowspan="4">1726606296601</td><td rowspan="4">43040</td></tr><tr class="passedeven"><td><a href="#m4">E2E_BulkOrder_Using_JSON</a></td></tr><tr class="passedeven"><td><a href="#m5">E2E_BulkOrder_Using_JSON</a></td></tr><tr class="passedeven"><td><a href="#m6">E2E_BulkOrder_Using_JSON</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">bulkOrderUsingExcel &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">eCommerceApp.Tests.BulkOrderUsingExcel</td><td><a href="#m7">E2E_BulkOrder_Using_Excel</a></td><td rowspan="2">1726606422675</td><td rowspan="2">37417</td></tr><tr class="failedeven"><td><a href="#m8">E2E_BulkOrder_Using_Excel</a></td></tr><tr><th colspan="4">bulkOrderUsingExcel &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">eCommerceApp.Tests.BulkOrderUsingExcel</td><td><a href="#m9">E2E_BulkOrder_Using_Excel</a></td><td rowspan="2">1726606375757</td><td rowspan="2">39085</td></tr><tr class="retriedeven"><td><a href="#m10">E2E_BulkOrder_Using_Excel</a></td></tr><tr><th colspan="4">bulkOrderUsingExcel &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">eCommerceApp.Tests.BulkOrderUsingExcel</td><td><a href="#m11">E2E_BulkOrder_Using_Excel</a></td><td rowspan="2">1726606472007</td><td rowspan="2">40994</td></tr><tr class="passedeven"><td><a href="#m12">E2E_BulkOrder_Using_Excel</a></td></tr></tbody>
 </table>
-<h2>bulkOrderUsingExcel</h2><h3 id="m0">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products=ZARA COAT 3;IPHONE 13 PRO}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ng-animating (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57145/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d55a522a5e4a142c3654c74fc682c577
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at eCommerce.AbstractComponents.UtilityFunctions.waitForVisibilityOfElement(UtilityFunctions.java:41)
-	at eCommerce.POM.Products.addProductsToCart(Products.java:40)
-	at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder(BulkOrderUsingExcel.java:33)
+<h2>Positive</h2><h3 id="m0">eCommerceApp.Tests.PurchaseOrder#purchaseOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>henrycavillpookie@gmail.com</td><td>RahulShetty@1295</td><td>ZARA COAT 3;IPHONE 13 PRO</td><td>India</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">eCommerceApp.Tests.PurchaseOrder#verifyOrders</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>henrycavillpookie@gmail.com</td><td>RahulShetty@1295</td><td>ZARA COAT 3;IPHONE 13 PRO</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>BulkOrder</h2><h3 id="m2">eCommerceApp.Tests.BulkOrder#E2E_BulkOrder_Using_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+	at eCommerceApp.Tests.BulkOrder.E2E_BulkOrder_Using_JSON(BulkOrder.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2.0, products=ADIDAS ORIGINAL;ZARA COAT 3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1.0, products=ZARA COAT 3;IPHONE 13 PRO}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3.0, products=ADIDAS ORIGINAL;ZARA COAT 3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products=ZARA COAT 3;IPHONE 13 PRO}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">eCommerceApp.Tests.BulkOrder#E2E_BulkOrder_Using_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">eCommerceApp.Tests.BulkOrder#E2E_BulkOrder_Using_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">eCommerceApp.Tests.BulkOrder#E2E_BulkOrder_Using_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">eCommerceApp.Tests.BulkOrder#E2E_BulkOrder_Using_JSON</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>bulkOrderUsingExcel</h2><h3 id="m7">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder_Using_Excel</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=ADIDAS ORIGINAL;ZARA COAT 3}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+	at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder_Using_Excel</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZARA COAT 3;IPHONE 13 PRO}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+	at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder_Using_Excel</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=ADIDAS ORIGINAL;ZARA COAT 3}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+	at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder_Using_Excel</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZARA COAT 3;IPHONE 13 PRO}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+	at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder_Using_Excel</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3, products=ADIDAS ORIGINAL;ZARA COAT 3}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">eCommerceApp.Tests.BulkOrderUsingExcel#E2E_BulkOrder_Using_Excel</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4, products=ZARA COAT 3;IPHONE 13 PRO}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

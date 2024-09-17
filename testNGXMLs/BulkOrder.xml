@@ -16,9 +16,6 @@
 	<parameter name="password" value="RahulShetty@1295"></parameter>
 	
 	<test thread-count="5" name="BulkOrder">
-		<parameter name="productList"
-			value="ZARA COAT 3;IPHONE 13 PRO"></parameter>
-		<parameter name="country" value="India"></parameter>
 		<classes>
 			<class name="eCommerceApp.Tests.BulkOrder" />
 		</classes>

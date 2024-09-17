@@ -20,7 +20,7 @@ public class UtilityFunctions {
 
 	public UtilityFunctions(WebDriver driver) {
 		this.driver = driver;
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		fWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(5)).pollingEvery(Duration.ofSeconds(1))
 				.ignoring(NoSuchElementException.class);
 	}

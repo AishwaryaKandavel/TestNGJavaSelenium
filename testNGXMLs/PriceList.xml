@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ECommerce" parallel="tests">
+
+	<groups>
+		<run>
+			<include name="priceList"></include>
+		</run>
+	</groups>
+
+	<listeners>
+		<listener class-name="eCommerce.AbstractComponents.Listeners"></listener>
+	</listeners>
+	
+	<test thread-count="5" name="priceList">
+		<classes>
+			<class name="eCommerceApp.Tests.PriceList" />
+		</classes>
+	</test>
+
+</suite> 

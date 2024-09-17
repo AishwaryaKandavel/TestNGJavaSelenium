@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="eCommerce.testNGCucumberRunner.TestRunner">
+      <class name="eCommerceApp.Tests.BulkOrderUsingExcel">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="launchApp"/>
+          <include name="initializeProperties"/>
+          <include name="E2E_BulkOrder_Using_Excel" invocation-numbers="0 1 2 3"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- eCommerce.testNGCucumberRunner.TestRunner -->
+      </class> <!-- eCommerceApp.Tests.BulkOrderUsingExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

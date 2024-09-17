@@ -1,109 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="6" passed="4" failed="0" skipped="0">
+<testng-results retried="3" ignored="3" total="16" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-17T03:22:46 IST" name="ECommerce" finished-at="2024-09-17T03:24:34 IST" duration-ms="107980">
+  <suite started-at="2024-09-18T02:19:52 IST" name="ECommerce" finished-at="2024-09-18T02:25:57 IST" duration-ms="364902">
     <groups>
       <group name="bulkOrderUsingExcel">
-        <method signature="BulkOrderUsingExcel.E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" name="E2E_BulkOrder" class="eCommerceApp.Tests.BulkOrderUsingExcel"/>
+        <method signature="BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" name="E2E_BulkOrder_Using_Excel" class="eCommerceApp.Tests.BulkOrderUsingExcel"/>
       </group> <!-- bulkOrderUsingExcel -->
+      <group name="errorHandling">
+        <method signature="ErrorHandling.forgotPwdPageError()[pri:0, instance:eCommerceApp.Tests.ErrorHandling@687ef2e0]" name="forgotPwdPageError" class="eCommerceApp.Tests.ErrorHandling"/>
+        <method signature="ErrorHandling.loginErrorValidation(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.ErrorHandling@687ef2e0]" name="loginErrorValidation" class="eCommerceApp.Tests.ErrorHandling"/>
+        <method signature="ErrorHandling.registerPageError()[pri:0, instance:eCommerceApp.Tests.ErrorHandling@687ef2e0]" name="registerPageError" class="eCommerceApp.Tests.ErrorHandling"/>
+      </group> <!-- errorHandling -->
+      <group name="bulkOrder">
+        <method signature="BulkOrder.E2E_BulkOrder_Using_JSON(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" name="E2E_BulkOrder_Using_JSON" class="eCommerceApp.Tests.BulkOrder"/>
+      </group> <!-- bulkOrder -->
     </groups>
-    <test started-at="2024-09-17T03:22:46 IST" name="bulkOrderUsingExcel" finished-at="2024-09-17T03:24:34 IST" duration-ms="107980">
-      <class name="eCommerceApp.Tests.BulkOrderUsingExcel">
-        <test-method is-config="true" signature="initializeProperties()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:22:46 IST" name="initializeProperties" finished-at="2024-09-17T03:22:46 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeProperties -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:22:47 IST" name="launchApp" finished-at="2024-09-17T03:22:49 IST" duration-ms="2530" status="PASS">
+    <test started-at="2024-09-18T02:19:52 IST" name="Positive" finished-at="2024-09-18T02:20:52 IST" duration-ms="60122">
+      <class name="eCommerceApp.Tests.PurchaseOrder">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@6436a7db]" started-at="2024-09-18T02:19:52 IST" name="launchApp" finished-at="2024-09-18T02:19:57 IST" duration-ms="4516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:22:49 IST" name="E2E_BulkOrder" description="Complete E2E bulk orders flow and verification of the same" data-provider="getDataFromExcel" finished-at="2024-09-17T03:23:09 IST" duration-ms="19018" status="PASS">
+        <test-method signature="purchaseOrder(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@6436a7db]" started-at="2024-09-18T02:19:57 IST" name="purchaseOrder" description="E2E flow for placing an order" finished-at="2024-09-18T02:20:37 IST" duration-ms="40430" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1.0, products=ZARA COAT 3;IPHONE 13 PRO}]]>
+                <![CDATA[henrycavillpookie@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RahulShetty@1295]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ZARA COAT 3;IPHONE 13 PRO]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[India]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- E2E_BulkOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:23:09 IST" name="closeBrowser" finished-at="2024-09-17T03:23:09 IST" duration-ms="173" status="PASS">
+        </test-method> <!-- purchaseOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@6436a7db]" started-at="2024-09-18T02:20:46 IST" name="closeBrowser" finished-at="2024-09-18T02:20:46 IST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:23:09 IST" name="launchApp" finished-at="2024-09-17T03:23:11 IST" duration-ms="2160" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@6436a7db]" started-at="2024-09-18T02:20:46 IST" name="launchApp" finished-at="2024-09-18T02:20:48 IST" duration-ms="1817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:23:11 IST" name="E2E_BulkOrder" description="Complete E2E bulk orders flow and verification of the same" data-provider="getDataFromExcel" finished-at="2024-09-17T03:23:30 IST" duration-ms="18860" status="PASS">
+        <test-method signature="verifyOrders(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@6436a7db]" started-at="2024-09-18T02:20:48 IST" name="verifyOrders" description="Verification of the placed order" finished-at="2024-09-18T02:20:52 IST" depends-on-methods="eCommerceApp.Tests.PurchaseOrder.purchaseOrder" duration-ms="3802" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2.0, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
+                <![CDATA[henrycavillpookie@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RahulShetty@1295]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ZARA COAT 3;IPHONE 13 PRO]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- E2E_BulkOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:23:30 IST" name="closeBrowser" finished-at="2024-09-17T03:23:31 IST" duration-ms="159" status="PASS">
+        </test-method> <!-- verifyOrders -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@6436a7db]" started-at="2024-09-18T02:20:52 IST" name="closeBrowser" finished-at="2024-09-18T02:20:52 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:23:31 IST" name="launchApp" finished-at="2024-09-17T03:23:33 IST" duration-ms="2957" status="PASS">
+      </class> <!-- eCommerceApp.Tests.PurchaseOrder -->
+    </test> <!-- Positive -->
+    <test started-at="2024-09-18T02:20:53 IST" name="BulkOrder" finished-at="2024-09-18T02:24:45 IST" duration-ms="231194">
+      <class name="eCommerceApp.Tests.BulkOrder">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:20:53 IST" name="launchApp" finished-at="2024-09-18T02:20:58 IST" duration-ms="4188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:23:33 IST" name="E2E_BulkOrder" description="Complete E2E bulk orders flow and verification of the same" data-provider="getDataFromExcel" finished-at="2024-09-17T03:23:53 IST" duration-ms="19043" status="PASS">
+        <test-method signature="E2E_BulkOrder_Using_JSON(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:20:58 IST" name="E2E_BulkOrder_Using_JSON" description="Complete E2E bulk orders flow and verification of the same using JSON" data-provider="getData" finished-at="2024-09-18T02:21:29 IST" duration-ms="31282" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3.0, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- E2E_BulkOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:23:53 IST" name="closeBrowser" finished-at="2024-09-17T03:23:53 IST" duration-ms="211" status="PASS">
+        </test-method> <!-- E2E_BulkOrder_Using_JSON -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:21:32 IST" name="closeBrowser" finished-at="2024-09-18T02:21:32 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:23:53 IST" name="launchApp" finished-at="2024-09-17T03:23:55 IST" duration-ms="1992" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:21:32 IST" name="launchApp" finished-at="2024-09-18T02:21:36 IST" duration-ms="3951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method retried="true" signature="E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:23:55 IST" name="E2E_BulkOrder" description="Complete E2E bulk orders flow and verification of the same" data-provider="getDataFromExcel" finished-at="2024-09-17T03:24:17 IST" duration-ms="21802" status="SKIP">
+        <test-method signature="E2E_BulkOrder_Using_JSON(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:21:36 IST" name="E2E_BulkOrder_Using_JSON" description="Complete E2E bulk orders flow and verification of the same using JSON" data-provider="getData" finished-at="2024-09-18T02:22:19 IST" duration-ms="43040" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products=ZARA COAT 3;IPHONE 13 PRO}]]>
+                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder_Using_JSON -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:22:20 IST" name="closeBrowser" finished-at="2024-09-18T02:22:20 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:22:20 IST" name="launchApp" finished-at="2024-09-18T02:22:25 IST" duration-ms="4952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="E2E_BulkOrder_Using_JSON(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:22:25 IST" name="E2E_BulkOrder_Using_JSON" description="Complete E2E bulk orders flow and verification of the same using JSON" data-provider="getData" finished-at="2024-09-18T02:23:07 IST" duration-ms="41839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder_Using_JSON -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:23:08 IST" name="closeBrowser" finished-at="2024-09-18T02:23:08 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:23:08 IST" name="launchApp" finished-at="2024-09-18T02:23:12 IST" duration-ms="4125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method retried="true" signature="E2E_BulkOrder_Using_JSON(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:23:12 IST" name="E2E_BulkOrder_Using_JSON" description="Complete E2E bulk orders flow and verification of the same using JSON" data-provider="getData" finished-at="2024-09-18T02:23:52 IST" duration-ms="39921" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .ng-animating (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57145/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d55a522a5e4a142c3654c74fc682c577]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ng-animating (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57145}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57145/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d55a522a5e4a142c3654c74fc682c577
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at eCommerce.AbstractComponents.UtilityFunctions.waitForVisibilityOfElement(UtilityFunctions.java:41)
-at eCommerce.POM.Products.addProductsToCart(Products.java:40)
-at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder(BulkOrderUsingExcel.java:33)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+at eCommerceApp.Tests.BulkOrder.E2E_BulkOrder_Using_JSON(BulkOrder.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,30 +190,300 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- E2E_BulkOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:24:17 IST" name="closeBrowser" finished-at="2024-09-17T03:24:17 IST" duration-ms="196" status="PASS">
+        </test-method> <!-- E2E_BulkOrder_Using_JSON -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:23:56 IST" name="closeBrowser" finished-at="2024-09-18T02:23:56 IST" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:24:17 IST" name="launchApp" finished-at="2024-09-17T03:24:19 IST" duration-ms="1818" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:23:56 IST" name="launchApp" finished-at="2024-09-18T02:24:01 IST" duration-ms="4361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="E2E_BulkOrder(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:24:19 IST" name="E2E_BulkOrder" description="Complete E2E bulk orders flow and verification of the same" data-provider="getDataFromExcel" finished-at="2024-09-17T03:24:33 IST" duration-ms="14097" status="PASS">
+        <test-method signature="E2E_BulkOrder_Using_JSON(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:24:01 IST" name="E2E_BulkOrder_Using_JSON" description="Complete E2E bulk orders flow and verification of the same using JSON" data-provider="getData" finished-at="2024-09-18T02:24:44 IST" duration-ms="42965" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4.0, products=ZARA COAT 3;IPHONE 13 PRO}]]>
+                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- E2E_BulkOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@3e7dd664]" started-at="2024-09-17T03:24:34 IST" name="closeBrowser" finished-at="2024-09-17T03:24:34 IST" duration-ms="145" status="PASS">
+        </test-method> <!-- E2E_BulkOrder_Using_JSON -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrder@115667d]" started-at="2024-09-18T02:24:44 IST" name="closeBrowser" finished-at="2024-09-18T02:24:45 IST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- eCommerceApp.Tests.BulkOrder -->
+    </test> <!-- BulkOrder -->
+    <test started-at="2024-09-18T02:20:56 IST" name="bulkOrderUsingExcel" finished-at="2024-09-18T02:25:57 IST" duration-ms="300787">
+      <class name="eCommerceApp.Tests.BulkOrderUsingExcel">
+        <test-method is-config="true" signature="initializeProperties()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:19:52 IST" name="initializeProperties" finished-at="2024-09-18T02:19:52 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeProperties -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:20:59 IST" name="launchApp" finished-at="2024-09-18T02:21:04 IST" duration-ms="4502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method retried="true" signature="E2E_BulkOrder_Using_Excel(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:21:04 IST" name="E2E_BulkOrder_Using_Excel" description="Complete E2E bulk orders flow and verification of the same using excel" data-provider="getDataFromExcel" finished-at="2024-09-18T02:21:42 IST" duration-ms="38202" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZARA COAT 3;IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder_Using_Excel -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:21:49 IST" name="closeBrowser" finished-at="2024-09-18T02:21:49 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:21:49 IST" name="launchApp" finished-at="2024-09-18T02:21:54 IST" duration-ms="4461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="E2E_BulkOrder_Using_Excel(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:21:54 IST" name="E2E_BulkOrder_Using_Excel" description="Complete E2E bulk orders flow and verification of the same using excel" data-provider="getDataFromExcel" finished-at="2024-09-18T02:22:42 IST" duration-ms="48883" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=1, products=ZARA COAT 3;IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder_Using_Excel -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:22:50 IST" name="closeBrowser" finished-at="2024-09-18T02:22:51 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:22:51 IST" name="launchApp" finished-at="2024-09-18T02:22:55 IST" duration-ms="4665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method retried="true" signature="E2E_BulkOrder_Using_Excel(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:22:55 IST" name="E2E_BulkOrder_Using_Excel" description="Complete E2E bulk orders flow and verification of the same using excel" data-provider="getDataFromExcel" finished-at="2024-09-18T02:23:34 IST" duration-ms="39085" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder_Using_Excel -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:23:38 IST" name="closeBrowser" finished-at="2024-09-18T02:23:38 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:23:38 IST" name="launchApp" finished-at="2024-09-18T02:23:42 IST" duration-ms="3684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="E2E_BulkOrder_Using_Excel(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:23:42 IST" name="E2E_BulkOrder_Using_Excel" description="Complete E2E bulk orders flow and verification of the same using excel" data-provider="getDataFromExcel" finished-at="2024-09-18T02:24:20 IST" duration-ms="37417" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=2, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at eCommerce.POM.Cart.verifyCart(Cart.java:41)
+at eCommerceApp.Tests.BulkOrderUsingExcel.E2E_BulkOrder_Using_Excel(BulkOrderUsingExcel.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder_Using_Excel -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:24:27 IST" name="closeBrowser" finished-at="2024-09-18T02:24:27 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:24:27 IST" name="launchApp" finished-at="2024-09-18T02:24:32 IST" duration-ms="4135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="E2E_BulkOrder_Using_Excel(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:24:32 IST" name="E2E_BulkOrder_Using_Excel" description="Complete E2E bulk orders flow and verification of the same using excel" data-provider="getDataFromExcel" finished-at="2024-09-18T02:25:13 IST" duration-ms="40994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailID=henrycavillpookie@gmail.com, tcno=3, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder_Using_Excel -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:25:13 IST" name="closeBrowser" finished-at="2024-09-18T02:25:13 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:25:13 IST" name="launchApp" finished-at="2024-09-18T02:25:16 IST" duration-ms="3035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="E2E_BulkOrder_Using_Excel(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:25:16 IST" name="E2E_BulkOrder_Using_Excel" description="Complete E2E bulk orders flow and verification of the same using excel" data-provider="getDataFromExcel" finished-at="2024-09-18T02:25:57 IST" duration-ms="40795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{country=Ireland, password=RahulShetty@1235, emailID=hughjackmanpookie@gmail.com, tcno=4, products=ZARA COAT 3;IPHONE 13 PRO}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder_Using_Excel -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingExcel@6bbe2511]" started-at="2024-09-18T02:25:57 IST" name="closeBrowser" finished-at="2024-09-18T02:25:57 IST" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
