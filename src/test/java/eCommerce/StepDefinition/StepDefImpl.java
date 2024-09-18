@@ -1,6 +1,7 @@
 package eCommerce.StepDefinition;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.List;
 
 import eCommerce.POM.Cart;
@@ -24,7 +25,7 @@ public class StepDefImpl{
 	InitializeDriver id;
 	
 	@Given("I launch the application")
-	public void i_launch_the_application() throws IOException {
+	public void i_launch_the_application() throws IOException, URISyntaxException {
 		id = new InitializeDriver();
 		id.launchApp();
 		this.login = id.login;
