@@ -91,8 +91,9 @@ public class InitializeDriver {
 					driver = new RemoteWebDriver(new URI
 							("http://"+UtilityFunctions.GetIpAddress()+":4444").toURL(), cap);
 					System.out.println();
-				}else
+				}else {
 					driver = new ChromeDriver(options);
+				}
 			} else {
 				EdgeOptions options = addEdgeOptions(arguments, prefs);
 				if(remote.equalsIgnoreCase("yes")) {
