@@ -29,6 +29,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import eCommerce.AbstractComponents.ExcelHandler;
+import eCommerce.AbstractComponents.JDBCConnection;
 import eCommerce.AbstractComponents.JSONHandler;
 import eCommerce.AbstractComponents.UtilityFunctions;
 import eCommerce.POM.Login;
@@ -39,6 +40,7 @@ public class InitializeDriver {
 	protected static Properties prop = new Properties();
 	protected static JSONHandler jsonHandler;
 	protected static ExcelHandler excelHandler;
+	protected static JDBCConnection jdbcConnection;
 	
 	public WebDriver driver;
 	Wait<WebDriver> wait;
@@ -52,6 +54,7 @@ public class InitializeDriver {
 		prop.load(fis);
 		jsonHandler = new JSONHandler(prop);
 		excelHandler = new ExcelHandler(prop);
+		jdbcConnection = new JDBCConnection(prop);
 	}
 
 	public WebDriver initializeBrowser() throws IOException, URISyntaxException {
@@ -60,6 +63,10 @@ public class InitializeDriver {
 				new File(System.getProperty("user.dir") + "/src/main/resources/runConfig.properties"));
 		prop.clear();
 		prop.load(fis);
+		
+		String cloud = System.getProperty("cloud")!=null?
+				System.getProperty("cloud"):
+					prop.getProperty("cloud").toLowerCase();
 		
 		String remote = System.getProperty("remote")!=null?
 				System.getProperty("remote"):
@@ -73,64 +80,65 @@ public class InitializeDriver {
 				System.getProperty("headless"):prop.getProperty("headless");
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
-		if(remote.equalsIgnoreCase("yes")) {
-			cap.setBrowserName(browser);
-		}
-
-		switch (browser) {
-		case "chrome":
-		case "edge": {
-
-			Map<String, Object> prefs = chromiumPreferences(browser);
-			List<String> arguments = addArguments(headless);			
-
-			if (browser.equalsIgnoreCase("chrome")) {
-				ChromeOptions options = addChromeOptions(arguments, prefs);
-				if(remote.equalsIgnoreCase("yes")) {
-					cap.setCapability(ChromeOptions.CAPABILITY, options);
-					driver = new RemoteWebDriver(new URI
-							("http://"+UtilityFunctions.GetIpAddress()+":4444").toURL(), cap);
-					System.out.println();
-				}else {
-					driver = new ChromeDriver(options);
+			if(remote.equalsIgnoreCase("yes")) {
+				cap.setBrowserName(browser);
+			}
+	
+			switch (browser) {
+			case "chrome":
+			case "edge": {
+	
+				Map<String, Object> prefs = chromiumPreferences(browser);
+				List<String> arguments = addArguments(headless);			
+	
+				if (browser.equalsIgnoreCase("chrome")) {
+					ChromeOptions options = addChromeOptions(arguments, prefs);
+					if(remote.equalsIgnoreCase("yes")) {
+						cap.setCapability(ChromeOptions.CAPABILITY, options);
+						driver = new RemoteWebDriver(new URI
+								("http://"+UtilityFunctions.GetIpAddress()+":4444").toURL(), cap);
+						System.out.println();
+					}else {
+						driver = new ChromeDriver(options);
+					}
+				} else {
+					EdgeOptions options = addEdgeOptions(arguments, prefs);
+					if(remote.equalsIgnoreCase("yes")) {
+						cap.setCapability(EdgeOptions.CAPABILITY, options);
+						driver = new RemoteWebDriver(new URI
+								("http://"+UtilityFunctions.GetIpAddress()+":4444").toURL(), cap);
+					}else
+						driver = new EdgeDriver(options);
 				}
-			} else {
-				EdgeOptions options = addEdgeOptions(arguments, prefs);
+				break;
+			}
+			case "firefox": {
+	
+				FirefoxProfile profile = addFirefoxProfile();
+				FirefoxOptions options = addFirefoxOptions(profile, headless);
 				if(remote.equalsIgnoreCase("yes")) {
-					cap.setCapability(EdgeOptions.CAPABILITY, options);
+					cap.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
 					driver = new RemoteWebDriver(new URI
 							("http://"+UtilityFunctions.GetIpAddress()+":4444").toURL(), cap);
 				}else
-					driver = new EdgeDriver(options);
+					driver = new FirefoxDriver(options);
+				break;
 			}
-			break;
+	
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + browser);
+			}
+			
+	
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+			if (browser.equalsIgnoreCase("firefox"))
+				driver.manage().window().maximize();
+			if(headless.equalsIgnoreCase("yes"))
+				driver.manage().window().fullscreen();
+			return driver;
 		}
-		case "firefox": {
-
-			FirefoxProfile profile = addFirefoxProfile();
-			FirefoxOptions options = addFirefoxOptions(profile, headless);
-			if(remote.equalsIgnoreCase("yes")) {
-				cap.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
-				driver = new RemoteWebDriver(new URI
-						("http://"+UtilityFunctions.GetIpAddress()+":4444").toURL(), cap);
-			}else
-				driver = new FirefoxDriver(options);
-			break;
-		}
-
-		default:
-			throw new IllegalArgumentException("Unexpected value: " + browser);
-		}
-		
-
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		if (browser.equalsIgnoreCase("firefox"))
-			driver.manage().window().maximize();
-		if(headless.equalsIgnoreCase("yes"))
-			driver.manage().window().fullscreen();
-		return driver;
-	}
+	
 	
 	public Map<String, Object> chromiumPreferences(String browser) {
 		Map<String, Object> prefs = new HashMap<String, Object>();

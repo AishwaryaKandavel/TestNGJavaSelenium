@@ -1,80 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-19T01:59:15 IST" name="ECommerce" finished-at="2024-09-19T02:00:11 IST" duration-ms="56075">
+  <suite started-at="2024-09-21T06:24:42 IST" name="ECommerce" finished-at="2024-09-21T06:26:28 IST" duration-ms="105539">
     <groups>
+      <group name="BulkOrderUsingDB">
+        <method signature="BulkOrderUsingDB.E2E_BulkOrder_Using_DB(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" name="E2E_BulkOrder_Using_DB" class="eCommerceApp.Tests.BulkOrderUsingDB"/>
+      </group> <!-- BulkOrderUsingDB -->
     </groups>
-    <test started-at="2024-09-19T01:59:15 IST" name="Positive" finished-at="2024-09-19T02:00:11 IST" duration-ms="56075">
-      <class name="eCommerceApp.Tests.PurchaseOrder">
-        <test-method is-config="true" signature="initializeProperties()[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@16414e40]" started-at="2024-09-19T01:59:15 IST" name="initializeProperties" finished-at="2024-09-19T01:59:15 IST" duration-ms="24" status="PASS">
+    <test started-at="2024-09-21T06:24:42 IST" name="BulkOrder" finished-at="2024-09-21T06:26:28 IST" duration-ms="105539">
+      <class name="eCommerceApp.Tests.BulkOrderUsingDB">
+        <test-method is-config="true" signature="initializeProperties()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" started-at="2024-09-21T06:24:42 IST" name="initializeProperties" finished-at="2024-09-21T06:24:42 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeProperties -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@16414e40]" started-at="2024-09-19T01:59:15 IST" name="launchApp" finished-at="2024-09-19T01:59:22 IST" duration-ms="7063" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" started-at="2024-09-21T06:24:43 IST" name="launchApp" finished-at="2024-09-21T06:24:45 IST" duration-ms="2426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="purchaseOrder(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@16414e40]" started-at="2024-09-19T01:59:22 IST" name="purchaseOrder" description="E2E flow for placing an order" finished-at="2024-09-19T02:00:04 IST" duration-ms="42285" status="PASS">
+        <test-method retried="true" signature="E2E_BulkOrder_Using_DB(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" started-at="2024-09-21T06:24:45 IST" name="E2E_BulkOrder_Using_DB" description="Complete E2E bulk orders flow and verification of the same using JSON" data-provider="getData" finished-at="2024-09-21T06:25:14 IST" duration-ms="28825" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[henrycavillpookie@gmail.com]]>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailid=henrycavillpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}]]>
               </value>
             </param>
-            <param index="1">
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-myp-c36="" type="button" class="btn btn-primary">...</button> is not clickable at point (1125, 746). Other element would receive the click: <div class="ng-tns-c4-3 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-success" toast-component="" style="opacity: 1;">...</div>
+  (Session info: chrome=129.0.6668.59)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb20df6de24ab5a679110408ee9e5467, clickElement {id=f.1C0EA3DE7971A23C83EA714CE624A9B8.d.ADD6172793853F7F2C3DF0EE2479F8AF.e.95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56078}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56078/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cb20df6de24ab5a679110408ee9e5467)] -> xpath: //button[text()='Checkout']]
+Session ID: cb20df6de24ab5a679110408ee9e5467]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-myp-c36="" type="button" class="btn btn-primary">...</button> is not clickable at point (1125, 746). Other element would receive the click: <div class="ng-tns-c4-3 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-success" toast-component="" style="opacity: 1;">...</div>
+  (Session info: chrome=129.0.6668.59)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb20df6de24ab5a679110408ee9e5467, clickElement {id=f.1C0EA3DE7971A23C83EA714CE624A9B8.d.ADD6172793853F7F2C3DF0EE2479F8AF.e.95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.59, chrome: {chromedriverVersion: 129.0.6668.58 (81a06fb873a9..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56078}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56078/devtoo..., se:cdpVersion: 129.0.6668.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cb20df6de24ab5a679110408ee9e5467)] -> xpath: //button[text()='Checkout']]
+Session ID: cb20df6de24ab5a679110408ee9e5467
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at eCommerce.POM.Cart.verifyCart(Cart.java:50)
+at eCommerceApp.Tests.BulkOrderUsingDB.E2E_BulkOrder_Using_DB(BulkOrderUsingDB.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- E2E_BulkOrder_Using_DB -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" started-at="2024-09-21T06:25:14 IST" name="closeBrowser" finished-at="2024-09-21T06:25:14 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" started-at="2024-09-21T06:25:14 IST" name="launchApp" finished-at="2024-09-21T06:25:16 IST" duration-ms="1997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="E2E_BulkOrder_Using_DB(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" started-at="2024-09-21T06:25:16 IST" name="E2E_BulkOrder_Using_DB" description="Complete E2E bulk orders flow and verification of the same using JSON" data-provider="getData" finished-at="2024-09-21T06:25:45 IST" duration-ms="28577" status="PASS">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[RahulShetty@1295]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ZARA COAT 3;IPHONE 13 PRO]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[India]]>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailid=henrycavillpookie@gmail.com, products=ZARA COAT 3;IPHONE 13 PRO}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- purchaseOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@16414e40]" started-at="2024-09-19T02:00:05 IST" name="closeBrowser" finished-at="2024-09-19T02:00:05 IST" duration-ms="253" status="PASS">
+        </test-method> <!-- E2E_BulkOrder_Using_DB -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" started-at="2024-09-21T06:25:45 IST" name="closeBrowser" finished-at="2024-09-21T06:25:45 IST" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@16414e40]" started-at="2024-09-19T02:00:05 IST" name="launchApp" finished-at="2024-09-19T02:00:09 IST" duration-ms="3876" status="PASS">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" started-at="2024-09-21T06:25:45 IST" name="launchApp" finished-at="2024-09-21T06:25:47 IST" duration-ms="1913" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method signature="verifyOrders(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@16414e40]" started-at="2024-09-19T02:00:09 IST" name="verifyOrders" description="Verification of the placed order" finished-at="2024-09-19T02:00:11 IST" depends-on-methods="eCommerceApp.Tests.PurchaseOrder.purchaseOrder" duration-ms="1671" status="PASS">
+        <test-method signature="E2E_BulkOrder_Using_DB(java.util.HashMap)[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" started-at="2024-09-21T06:25:47 IST" name="E2E_BulkOrder_Using_DB" description="Complete E2E bulk orders flow and verification of the same using JSON" data-provider="getData" finished-at="2024-09-21T06:26:27 IST" duration-ms="39936" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[henrycavillpookie@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[RahulShetty@1295]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ZARA COAT 3;IPHONE 13 PRO]]>
+                <![CDATA[{country=India, password=RahulShetty@1295, emailid=henrycavillpookie@gmail.com, products=ADIDAS ORIGINAL;ZARA COAT 3}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyOrders -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.PurchaseOrder@16414e40]" started-at="2024-09-19T02:00:11 IST" name="closeBrowser" finished-at="2024-09-19T02:00:11 IST" duration-ms="162" status="PASS">
+        </test-method> <!-- E2E_BulkOrder_Using_DB -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:eCommerceApp.Tests.BulkOrderUsingDB@22d7b4f8]" started-at="2024-09-21T06:26:27 IST" name="closeBrowser" finished-at="2024-09-21T06:26:28 IST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- eCommerceApp.Tests.PurchaseOrder -->
-    </test> <!-- Positive -->
+      </class> <!-- eCommerceApp.Tests.BulkOrderUsingDB -->
+    </test> <!-- BulkOrder -->
   </suite> <!-- ECommerce -->
 </testng-results>

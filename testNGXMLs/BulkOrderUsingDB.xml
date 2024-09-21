@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ECommerce" parallel="tests">
+
+	<groups>
+		<run>
+			<include name="BulkOrderUsingDB"></include>
+		</run>
+	</groups>
+
+	<listeners>
+		<listener class-name="eCommerce.AbstractComponents.Listeners"></listener>
+	</listeners>
+
+	<parameter name="emailID" value="henrycavillpookie@gmail.com"></parameter>
+	<parameter name="password" value="RahulShetty@1295"></parameter>
+	
+	<test thread-count="5" name="BulkOrder">
+		<classes>
+			<class name="eCommerceApp.Tests.BulkOrderUsingDB" />
+		</classes>
+	</test>
+
+</suite> 

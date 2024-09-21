@@ -27,9 +27,9 @@
 <!-- 		</classes> -->
 <!-- 	</test> -->
 	
-<!-- 	<test thread-count="5" name="BulkOrder"> -->
+<!-- 	<test thread-count="5" name="BulkOrderUsingJSON"> -->
 <!-- 		<classes> -->
-<!-- 			<class name="eCommerceApp.Tests.BulkOrder" /> -->
+<!-- 			<class name="eCommerceApp.Tests.BulkOrderUsingJSON" /> -->
 <!-- 		</classes> -->
 <!-- 	</test> -->
 	
